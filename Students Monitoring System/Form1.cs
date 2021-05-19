@@ -254,7 +254,7 @@ namespace Students_Monitoring_System
 
         private void forgotPassword_MouseLeave(object sender, EventArgs e)
         {
-            forgotPassword.ForeColor = System.Drawing.Color.WhiteSmoke;
+            forgotPassword.ForeColor = System.Drawing.Color.FromArgb(241, 239, 242);
         }
 
         private void btnMaximized_Click(object sender, EventArgs e)
