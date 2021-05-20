@@ -16,7 +16,8 @@ namespace Students_Monitoring_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            // Application.Run(new LoginForm());
+            Application.Run(new ChairmanInterface());
         }
     }
 }

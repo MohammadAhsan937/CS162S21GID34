@@ -29,6 +29,7 @@ namespace Students_Monitoring_System
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
@@ -54,8 +55,8 @@ namespace Students_Monitoring_System
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.crdentialsLogoLbl = new System.Windows.Forms.Label();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse();
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.credentialsPanel.SuspendLayout();
@@ -148,7 +149,7 @@ namespace Students_Monitoring_System
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(43)))), ((int)(((byte)(86)))));
-            this.label2.Location = new System.Drawing.Point(133, 300);
+            this.label2.Location = new System.Drawing.Point(133, 302);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(188, 18);
             this.label2.TabIndex = 11;
@@ -160,7 +161,7 @@ namespace Students_Monitoring_System
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(43)))), ((int)(((byte)(86)))));
-            this.label1.Location = new System.Drawing.Point(52, 259);
+            this.label1.Location = new System.Drawing.Point(52, 261);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(360, 31);
             this.label1.TabIndex = 10;
@@ -171,7 +172,7 @@ namespace Students_Monitoring_System
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(128, 73);
+            this.pictureBox1.Location = new System.Drawing.Point(128, 75);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(193, 183);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -184,7 +185,7 @@ namespace Students_Monitoring_System
             this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(43)))), ((int)(((byte)(86)))));
-            this.label3.Location = new System.Drawing.Point(0, 452);
+            this.label3.Location = new System.Drawing.Point(0, 455);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
             this.label3.Size = new System.Drawing.Size(426, 27);
@@ -198,7 +199,7 @@ namespace Students_Monitoring_System
             this.credentialsPanel.AutoSize = true;
             this.credentialsPanel.Controls.Add(this.panel2);
             this.credentialsPanel.Controls.Add(this.panel1);
-            this.credentialsPanel.Location = new System.Drawing.Point(418, 73);
+            this.credentialsPanel.Location = new System.Drawing.Point(418, 75);
             this.credentialsPanel.Name = "credentialsPanel";
             this.credentialsPanel.Size = new System.Drawing.Size(284, 307);
             this.credentialsPanel.TabIndex = 15;
@@ -424,8 +425,9 @@ namespace Students_Monitoring_System
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(21)))));
-            this.ClientSize = new System.Drawing.Size(775, 479);
+            this.ClientSize = new System.Drawing.Size(775, 482);
             this.Controls.Add(this.credentialsPanel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
