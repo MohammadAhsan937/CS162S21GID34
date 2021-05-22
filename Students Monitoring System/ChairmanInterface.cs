@@ -144,8 +144,37 @@ namespace Students_Monitoring_System
 
         private void manageMedicalStaffBtn_Click(object sender, EventArgs e)
         {
-            MembersCommonForm f = new MembersCommonForm("Change form", 7);
+            MembersCommonForm f = new MembersCommonForm("Medical Form", 7);
             openChildForm(f);
+        }
+
+        private void uploadMedicalStaffBtn_Click(object sender, EventArgs e)
+        {
+            UploadMembersFileForm f = new UploadMembersFileForm("Medical Form", 9);
+            openChildForm(f);
+        }
+
+        private void instititutionAdvisorBtn_Click(object sender, EventArgs e)
+        {
+            MembersCommonForm f = new MembersCommonForm("Institution Advisor Form", 7);
+            openChildForm(f);
+        }
+
+        private void updateAdvisorsBtn_Click(object sender, EventArgs e)
+        {
+            UploadMembersFileForm f = new UploadMembersFileForm("Update Advisors", 8, 9);
+            openChildForm(f);
+        }
+
+        private void viewStudentsBtn_Click(object sender, EventArgs e)
+        {
+            ViewStudentsForm f = new ViewStudentsForm();
+            openChildForm(f);
+        }
+
+        private void studentProfileBtn_Click(object sender, EventArgs e)
+        {
+            openChildForm(new StudentProfileForm());
         }
     }
 }

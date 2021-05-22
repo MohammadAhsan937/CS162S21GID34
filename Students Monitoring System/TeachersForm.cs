@@ -12,6 +12,7 @@ namespace Students_Monitoring_System
 {
     public partial class MembersCommonForm : Form
     {
+        string identifyForm = "";
         public MembersCommonForm()
         {
             InitializeComponent();
@@ -26,6 +27,7 @@ namespace Students_Monitoring_System
         public MembersCommonForm(string str, int num)
         {
             InitializeComponent();
+            identifyForm = str;
             customizeFormForMedicalStaff();
         }
 
@@ -64,7 +66,6 @@ namespace Students_Monitoring_System
             // reset1Btn
             resetBtn.Visible = false;
             reset2Btn.Visible = false;
-            this.reset1Btn = new System.Windows.Forms.Button();
             this.dataSaveTableLayoutPanel.Controls.Add(this.reset1Btn, 1, 0);
 
             // memberDataGridView
@@ -110,7 +111,6 @@ namespace Students_Monitoring_System
 
         private void customizeFormForMedicalStaff()
         {
-            teacherIdLabel.Text = "PMDC No:";
             sectionsLabel.Text = "Email:";
             sectionsCombobox.Visible = false;
             this.addMemberTableLayoutPanel.Controls.Add(this.emailTextbox, 1, 8);
@@ -120,59 +120,82 @@ namespace Students_Monitoring_System
             emailLabel.Visible = false;
             passwordLabel.Visible = false;
             passwordTextbox.UseSystemPasswordChar = true;
-            //addMemberTableLayoutPanel.RowStyles.RemoveAt(10);
-            addMemberTableLayoutPanel.RowStyles.RemoveAt(9);
             addMemberTableLayoutPanel.RowStyles.RemoveAt(8);
+            addMemberTableLayoutPanel.RowStyles.RemoveAt(9);
             addMemberTableLayoutPanel.Size = new Size(838, 300);
 
             // dataGridView
-            this.ID.HeaderText = "PMDC";
+            
             this.sections.Visible = false;
             this.subjects.Visible = false;
 
             // save1Btn
             saveBtn.Visible = false;
             save1Btn.Visible = false;
-            this.save2Btn = new System.Windows.Forms.Button();
-            this.dataSaveTableLayoutPanel.Controls.Add(this.save2Btn, 0, 0);
 
             // reset1Btn
             resetBtn.Visible = false;
             reset1Btn.Visible = false;
-            this.reset2Btn = new System.Windows.Forms.Button();
-            this.dataSaveTableLayoutPanel.Controls.Add(this.reset2Btn, 1, 0);
+            
+            if(identifyForm == "Institution Advisor Form")
+            {
+                this.ID.HeaderText = "Advisor's ID";
+                teacherIdLabel.Text = "Advisor's ID:";
+                reset2Btn.Visible = false;
+                save2Btn.Visible = false;
+                this.dataSaveTableLayoutPanel.Controls.Add(this.save3Btn, 0, 0);
+                this.dataSaveTableLayoutPanel.Controls.Add(this.reset3Btn, 1, 0);
+                designCompnentsForMedicalForm(save3Btn, reset3Btn);
+                save3Btn.Click += new System.EventHandler(this.save3Btn_Click);
+                reset3Btn.Click += new System.EventHandler(this.reset3Btn_Click);
+                reset3Btn.Visible = true;
+                save3Btn.Visible = true;
+            }
+
+            if(identifyForm == "Medical Form")
+            {
+                this.ID.HeaderText = "PMDC No";
+                teacherIdLabel.Text = "PMDC No:";
+                reset3Btn.Visible = false;
+                save3Btn.Visible = false;
+                this.dataSaveTableLayoutPanel.Controls.Add(this.save2Btn, 0, 0);
+                this.dataSaveTableLayoutPanel.Controls.Add(this.reset2Btn, 1, 0);
+                designCompnentsForMedicalForm(save2Btn, reset2Btn);
+                reset2Btn.Click += new System.EventHandler(this.reset2Btn_Click);
+                save2Btn.Click += new System.EventHandler(this.save2Btn_Click);
+                save2Btn.Visible = true;
+                reset2Btn.Visible = true;
+            }
         }
 
-        private void designCompnentsForMedicalForm()
+        private void designCompnentsForMedicalForm(Button btn, Button btn1)
         {
             //
             // save2Btn
             //
-            this.save2Btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.save2Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.save2Btn.Location = new System.Drawing.Point(276, 3);
-            this.save2Btn.Margin = new System.Windows.Forms.Padding(3, 3, 40, 3);
-            this.save2Btn.Name = "save2Btn";
-            this.save2Btn.Size = new System.Drawing.Size(94, 36);
-            this.save2Btn.TabIndex = 0;
-            this.save2Btn.Text = "Save";
-            this.save2Btn.UseVisualStyleBackColor = true;
-            this.save2Btn.Click += new System.EventHandler(this.save2Btn_Click);
+            btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btn.Location = new System.Drawing.Point(276, 3);
+            btn.Margin = new System.Windows.Forms.Padding(3, 3, 40, 3);
+            btn.Name = "save2Btn";
+            btn.Size = new System.Drawing.Size(94, 36);
+            btn.TabIndex = 0;
+            btn.Text = "Save";
+            btn.UseVisualStyleBackColor = true;
             //
             // reset1Btn
             //
-            this.reset1Btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            btn1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.reset2Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reset2Btn.Location = new System.Drawing.Point(276, 3);
-            this.reset2Btn.Margin = new System.Windows.Forms.Padding(3, 3, 40, 3);
-            this.reset2Btn.Name = "reset2Btn";
-            this.reset2Btn.Size = new System.Drawing.Size(94, 36);
-            this.reset2Btn.TabIndex = 0;
-            this.reset2Btn.Text = "Reset";
-            this.reset2Btn.UseVisualStyleBackColor = true;
-            this.reset2Btn.Click += new System.EventHandler(this.reset2Btn_Click);
+            btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btn1.Location = new System.Drawing.Point(276, 3);
+            btn1.Margin = new System.Windows.Forms.Padding(3, 3, 40, 3);
+            btn1.Name = "reset2Btn";
+            btn1.Size = new System.Drawing.Size(94, 36);
+            btn1.TabIndex = 0;
+            btn1.Text = "Reset";
+            btn1.UseVisualStyleBackColor = true;
         }
 
 
@@ -189,6 +212,17 @@ namespace Students_Monitoring_System
 
         private void save2Btn_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Medical Form Save");
+        }
+
+        private void save3Btn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Advisor Form Save");
+        }
+
+
+        private void resetBtn_Click(object sender, EventArgs e)
+        {
 
         }
 
@@ -199,7 +233,12 @@ namespace Students_Monitoring_System
 
         private void reset2Btn_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Medical Form Reset");
+        }
 
+        private void reset3Btn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Advisor Form Reset");
         }
     }
 }

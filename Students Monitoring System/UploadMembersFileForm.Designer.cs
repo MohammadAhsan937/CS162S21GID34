@@ -37,6 +37,8 @@ namespace Students_Monitoring_System
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.browseFileBtn = new System.Windows.Forms.Button();
             this.teachersFileOkay1Btn = new System.Windows.Forms.Button();
+            this.teachersFileOkay2Btn = new System.Windows.Forms.Button();
+            this.teachersFileOkay3Btn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -146,8 +148,30 @@ namespace Students_Monitoring_System
             this.teachersFileOkay1Btn.Text = "Okay";
             this.teachersFileOkay1Btn.UseVisualStyleBackColor = true;
             this.teachersFileOkay1Btn.Click += new System.EventHandler(this.teachersFileOkay1Btn_Click);
-            this.teachersFileOkay1Btn.MouseEnter += new System.EventHandler(this.teachersFileOkay1Btn_MouseEnter);
-            this.teachersFileOkay1Btn.MouseLeave += new System.EventHandler(this.teachersFileOkay1Btn_MouseLeave);
+            // 
+            // teachersFileOkay2Btn
+            // 
+            this.teachersFileOkay2Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.teachersFileOkay2Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teachersFileOkay2Btn.Location = new System.Drawing.Point(336, 299);
+            this.teachersFileOkay2Btn.Name = "teachersFileOkay2Btn";
+            this.teachersFileOkay2Btn.Size = new System.Drawing.Size(68, 33);
+            this.teachersFileOkay2Btn.TabIndex = 8;
+            this.teachersFileOkay2Btn.Text = "Okay";
+            this.teachersFileOkay2Btn.UseVisualStyleBackColor = true;
+            this.teachersFileOkay2Btn.Click += new System.EventHandler(this.teachersFileOkay2Btn_Click);
+            // 
+            // teachersFileOkay3Btn
+            // 
+            this.teachersFileOkay3Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.teachersFileOkay3Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teachersFileOkay3Btn.Location = new System.Drawing.Point(336, 299);
+            this.teachersFileOkay3Btn.Name = "teachersFileOkay3Btn";
+            this.teachersFileOkay3Btn.Size = new System.Drawing.Size(68, 33);
+            this.teachersFileOkay3Btn.TabIndex = 9;
+            this.teachersFileOkay3Btn.Text = "Okay";
+            this.teachersFileOkay3Btn.UseVisualStyleBackColor = true;
+            this.teachersFileOkay3Btn.Click += new System.EventHandler(this.teachersFileOkay3Btn_Click);
             // 
             // UploadMembersFileForm
             // 
@@ -155,6 +179,8 @@ namespace Students_Monitoring_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(732, 468);
+            this.Controls.Add(this.teachersFileOkay3Btn);
+            this.Controls.Add(this.teachersFileOkay2Btn);
             this.Controls.Add(this.teachersFileOkay1Btn);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.TeacherFileOkayBtn);
@@ -178,5 +204,7 @@ namespace Students_Monitoring_System
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button browseFileBtn;
         private System.Windows.Forms.Button teachersFileOkay1Btn;
+        private System.Windows.Forms.Button teachersFileOkay2Btn;
+        private System.Windows.Forms.Button teachersFileOkay3Btn;
     }
 }

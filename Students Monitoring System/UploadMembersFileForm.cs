@@ -18,6 +18,8 @@ namespace Students_Monitoring_System
             browseFileLabel.Visible = false;
             TeacherFileOkayBtn.Visible = true;
             teachersFileOkay1Btn.Visible = false;
+            teachersFileOkay2Btn.Visible = false;
+            teachersFileOkay3Btn.Visible = false;
         }
 
         public UploadMembersFileForm(string str)
@@ -26,6 +28,28 @@ namespace Students_Monitoring_System
             browseFileLabel.Visible = false;
             TeacherFileOkayBtn.Visible = false;
             teachersFileOkay1Btn.Visible = true;
+            teachersFileOkay2Btn.Visible = false;
+            teachersFileOkay3Btn.Visible = false;
+        }
+
+        public UploadMembersFileForm(string str, int num)
+        {
+            InitializeComponent();
+            browseFileLabel.Visible = false;
+            TeacherFileOkayBtn.Visible = false;
+            teachersFileOkay1Btn.Visible = false;
+            teachersFileOkay2Btn.Visible = true;
+            teachersFileOkay3Btn.Visible = false;
+        }
+
+        public UploadMembersFileForm(string str, int num, int a)
+        {
+            InitializeComponent();
+            browseFileLabel.Visible = false;
+            TeacherFileOkayBtn.Visible = false;
+            teachersFileOkay1Btn.Visible = false;
+            teachersFileOkay2Btn.Visible = false;
+            teachersFileOkay3Btn.Visible = true;
         }
 
         private void button1_MouseEnter_1(object sender, EventArgs e)
@@ -43,16 +67,6 @@ namespace Students_Monitoring_System
             MessageBox.Show("teachersFileOkay1Btn_Click");
         }
 
-        private void teachersFileOkay1Btn_MouseEnter(object sender, EventArgs e)
-        {
-            browseFileLabel.Visible = true;
-        }
-
-        private void teachersFileOkay1Btn_MouseLeave(object sender, EventArgs e)
-        {
-            browseFileLabel.Visible = false;
-        }
-
         private void browseFileBtn_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
@@ -67,6 +81,16 @@ namespace Students_Monitoring_System
         private void TeacherFileOkayBtn_Click(object sender, EventArgs e)
         {
             MessageBox.Show("TeacherFileOkayBtn_Click");
+        }
+
+        private void teachersFileOkay2Btn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("teachersFileOkay2Btn_Click");
+        }
+
+        private void teachersFileOkay3Btn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("teachersFileOkay3Btn_Click");
         }
     }
 }
