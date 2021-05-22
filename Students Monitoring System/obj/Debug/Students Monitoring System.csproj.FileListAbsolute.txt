@@ -11,6 +11,6 @@ D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students 
 D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students Monitoring System.csproj.CopyComplete
 D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students Monitoring System.exe
 D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students Monitoring System.pdb
-D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students_Monitoring_System.TeachersForm.resources
 D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students Monitoring System.csprojAssemblyReference.cache
-D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students_Monitoring_System.SessionSelectingForm.resources
+D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students_Monitoring_System.MembersCommonForm.resources
+D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students_Monitoring_System.UploadMembersFileForm.resources

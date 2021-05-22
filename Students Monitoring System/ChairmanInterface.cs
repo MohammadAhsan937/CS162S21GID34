@@ -12,25 +12,12 @@ namespace Students_Monitoring_System
 {
     public partial class ChairmanInterface : Form
     {
-        string session = "";
+        private Form activeForm = null;
         public ChairmanInterface()
         {
             InitializeComponent();
-            customizeDesign();
-        }
-
-        public ChairmanInterface(string str)
-        {
-            session = str;
-        }
-
-        private void customizeDesign()
-        {
-            teachersSubMenuPanel.Visible = false;
-            activitiesInchargeSubMenuPanel.Visible = false;
-            medicalStaffSubMenuPanel.Visible = false;
-            institutionAdvisorSubMenuPanel.Visible = false;
-            studentsSubMenuPanel.Visible = false;
+            hideSubMenu();
+            sessionSelectingPanel.Visible = false;
         }
 
         private void hideSubMenu()
@@ -59,10 +46,8 @@ namespace Students_Monitoring_System
         {
             teachersSubMenuPanel.AutoScroll = true;
             showSubMenu(teachersSubMenuPanel);
-            
         }
 
-        private Form activeForm = null;
         private void openChildForm(Form childForm)
         {
             if (activeForm != null)
@@ -80,8 +65,16 @@ namespace Students_Monitoring_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openChildForm(new SessionSelectingForm());
-            MessageBox.Show("I am Back");
+            if(sessionSelectingPanel.Visible == false)
+            {
+                if(activeForm != null)
+                {
+                    activeForm.Close();
+                }
+                sessionTeacherFileOkayBtn.Visible = false;
+                sessionTeacherOkayBtn.Visible = true;
+                sessionSelectingPanel.Visible = true;
+            }
         }
 
         private void activitiesInachrgeBtn_Click(object sender, EventArgs e)
@@ -102,6 +95,51 @@ namespace Students_Monitoring_System
         private void studentsBtn_Click(object sender, EventArgs e)
         {
             showSubMenu(studentsSubMenuPanel);
+        }
+
+        private void sessionOkayBtn_Click(object sender, EventArgs e)
+        {
+            if(sessionCombobox.Text != "" || sessionSemesterCombobox.Text != "")
+            {
+                sessionSelectingPanel.Visible = false;
+                openChildForm(new MembersCommonForm());
+            }
+        }
+
+        private void uploadTeacherBtn_Click(object sender, EventArgs e)
+        {
+            sessionSelectingPanel.Visible = false;
+            if (sessionSelectingPanel.Visible == false)
+            {
+                if (activeForm != null)
+                {
+                    activeForm.Close();
+                }
+                sessionTeacherFileOkayBtn.Visible = true;
+                sessionTeacherOkayBtn.Visible = false;
+                sessionSelectingPanel.Visible = true;
+            }
+        }
+
+        private void sessionTeacherFileOkayBtn_Click(object sender, EventArgs e)
+        {
+            if (sessionCombobox.Text != "" || sessionSemesterCombobox.Text != "")
+            {
+                sessionSelectingPanel.Visible = false;
+                openChildForm(new UploadMembersFileForm());
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            MembersCommonForm f = new MembersCommonForm("Change Form");
+            openChildForm(f);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            UploadMembersFileForm f = new UploadMembersFileForm("Change Button");
+            openChildForm(f);
         }
     }
 }

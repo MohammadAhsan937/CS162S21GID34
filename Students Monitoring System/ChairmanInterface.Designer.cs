@@ -30,8 +30,14 @@ namespace Students_Monitoring_System
         private void InitializeComponent()
         {
             this.sideMenuPanel = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.complainsBtn = new System.Windows.Forms.Button();
+            this.emailsBtn = new System.Windows.Forms.Button();
+            this.messagesBtn = new System.Windows.Forms.Button();
+            this.reportsBtn = new System.Windows.Forms.Button();
+            this.notificationsBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.studentsSubMenuPanel = new System.Windows.Forms.Panel();
-            this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -42,7 +48,6 @@ namespace Students_Monitoring_System
             this.button12 = new System.Windows.Forms.Button();
             this.institutionAdvisorBtn = new System.Windows.Forms.Button();
             this.medicalStaffSubMenuPanel = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.medicalStaffBtn = new System.Windows.Forms.Button();
@@ -51,15 +56,22 @@ namespace Students_Monitoring_System
             this.button7 = new System.Windows.Forms.Button();
             this.activitiesInachrgeBtn = new System.Windows.Forms.Button();
             this.teachersSubMenuPanel = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.uploadTeacherBtn = new System.Windows.Forms.Button();
+            this.manageTeacherBtn = new System.Windows.Forms.Button();
             this.teachersBtn = new System.Windows.Forms.Button();
             this.logoPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.titlePanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dashboardPanel = new System.Windows.Forms.Panel();
+            this.sessionSelectingPanel = new System.Windows.Forms.Panel();
+            this.sessionTeacherFileOkayBtn = new System.Windows.Forms.Button();
+            this.sessionTeacherOkayBtn = new System.Windows.Forms.Button();
+            this.sessionSemesterCombobox = new System.Windows.Forms.ComboBox();
+            this.sessionCombobox = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.selectSessionLabel = new System.Windows.Forms.Label();
+            this.selectSessionHeadingLabel = new System.Windows.Forms.Label();
             this.sideMenuPanel.SuspendLayout();
             this.studentsSubMenuPanel.SuspendLayout();
             this.institutionAdvisorSubMenuPanel.SuspendLayout();
@@ -67,13 +79,22 @@ namespace Students_Monitoring_System
             this.activitiesInchargeSubMenuPanel.SuspendLayout();
             this.teachersSubMenuPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.titlePanel.SuspendLayout();
+            this.dashboardPanel.SuspendLayout();
+            this.sessionSelectingPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // sideMenuPanel
             // 
             this.sideMenuPanel.AutoScroll = true;
             this.sideMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(21)))));
+            this.sideMenuPanel.Controls.Add(this.button2);
+            this.sideMenuPanel.Controls.Add(this.complainsBtn);
+            this.sideMenuPanel.Controls.Add(this.emailsBtn);
+            this.sideMenuPanel.Controls.Add(this.messagesBtn);
+            this.sideMenuPanel.Controls.Add(this.reportsBtn);
+            this.sideMenuPanel.Controls.Add(this.notificationsBtn);
+            this.sideMenuPanel.Controls.Add(this.button1);
             this.sideMenuPanel.Controls.Add(this.studentsSubMenuPanel);
             this.sideMenuPanel.Controls.Add(this.studentsBtn);
             this.sideMenuPanel.Controls.Add(this.institutionAdvisorSubMenuPanel);
@@ -88,37 +109,132 @@ namespace Students_Monitoring_System
             this.sideMenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideMenuPanel.Location = new System.Drawing.Point(0, 0);
             this.sideMenuPanel.Name = "sideMenuPanel";
-            this.sideMenuPanel.Size = new System.Drawing.Size(229, 525);
+            this.sideMenuPanel.Size = new System.Drawing.Size(229, 591);
             this.sideMenuPanel.TabIndex = 0;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.button2.Location = new System.Drawing.Point(0, 833);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(212, 36);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Staff Contacts";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // complainsBtn
+            // 
+            this.complainsBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.complainsBtn.FlatAppearance.BorderSize = 0;
+            this.complainsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.complainsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.complainsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.complainsBtn.Location = new System.Drawing.Point(0, 797);
+            this.complainsBtn.Name = "complainsBtn";
+            this.complainsBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.complainsBtn.Size = new System.Drawing.Size(212, 36);
+            this.complainsBtn.TabIndex = 16;
+            this.complainsBtn.Text = "Complains";
+            this.complainsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.complainsBtn.UseVisualStyleBackColor = true;
+            // 
+            // emailsBtn
+            // 
+            this.emailsBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.emailsBtn.FlatAppearance.BorderSize = 0;
+            this.emailsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.emailsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.emailsBtn.Location = new System.Drawing.Point(0, 761);
+            this.emailsBtn.Name = "emailsBtn";
+            this.emailsBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.emailsBtn.Size = new System.Drawing.Size(212, 36);
+            this.emailsBtn.TabIndex = 15;
+            this.emailsBtn.Text = "Emails";
+            this.emailsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.emailsBtn.UseVisualStyleBackColor = true;
+            // 
+            // messagesBtn
+            // 
+            this.messagesBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.messagesBtn.FlatAppearance.BorderSize = 0;
+            this.messagesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.messagesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.messagesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.messagesBtn.Location = new System.Drawing.Point(0, 725);
+            this.messagesBtn.Name = "messagesBtn";
+            this.messagesBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.messagesBtn.Size = new System.Drawing.Size(212, 36);
+            this.messagesBtn.TabIndex = 14;
+            this.messagesBtn.Text = "Messages";
+            this.messagesBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.messagesBtn.UseVisualStyleBackColor = true;
+            // 
+            // reportsBtn
+            // 
+            this.reportsBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.reportsBtn.FlatAppearance.BorderSize = 0;
+            this.reportsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reportsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.reportsBtn.Location = new System.Drawing.Point(0, 688);
+            this.reportsBtn.Name = "reportsBtn";
+            this.reportsBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.reportsBtn.Size = new System.Drawing.Size(212, 37);
+            this.reportsBtn.TabIndex = 13;
+            this.reportsBtn.Text = "Reports";
+            this.reportsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.reportsBtn.UseVisualStyleBackColor = true;
+            // 
+            // notificationsBtn
+            // 
+            this.notificationsBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.notificationsBtn.FlatAppearance.BorderSize = 0;
+            this.notificationsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.notificationsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notificationsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.notificationsBtn.Location = new System.Drawing.Point(0, 652);
+            this.notificationsBtn.Name = "notificationsBtn";
+            this.notificationsBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.notificationsBtn.Size = new System.Drawing.Size(212, 36);
+            this.notificationsBtn.TabIndex = 8;
+            this.notificationsBtn.Text = "Notifications";
+            this.notificationsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.notificationsBtn.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.button1.Location = new System.Drawing.Point(0, 616);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(212, 36);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Students Fee Structure";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // studentsSubMenuPanel
             // 
-            this.studentsSubMenuPanel.Controls.Add(this.button15);
             this.studentsSubMenuPanel.Controls.Add(this.button14);
             this.studentsSubMenuPanel.Controls.Add(this.button4);
             this.studentsSubMenuPanel.Controls.Add(this.button11);
             this.studentsSubMenuPanel.Controls.Add(this.button13);
             this.studentsSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.studentsSubMenuPanel.Location = new System.Drawing.Point(0, 561);
+            this.studentsSubMenuPanel.Location = new System.Drawing.Point(0, 496);
             this.studentsSubMenuPanel.Name = "studentsSubMenuPanel";
-            this.studentsSubMenuPanel.Size = new System.Drawing.Size(212, 157);
+            this.studentsSubMenuPanel.Size = new System.Drawing.Size(212, 120);
             this.studentsSubMenuPanel.TabIndex = 10;
-            // 
-            // button15
-            // 
-            this.button15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.button15.Location = new System.Drawing.Point(0, 120);
-            this.button15.Name = "button15";
-            this.button15.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button15.Size = new System.Drawing.Size(212, 30);
-            this.button15.TabIndex = 6;
-            this.button15.Text = "See Sudents Behaviour";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.UseVisualStyleBackColor = true;
             // 
             // button14
             // 
@@ -132,7 +248,7 @@ namespace Students_Monitoring_System
             this.button14.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button14.Size = new System.Drawing.Size(212, 30);
             this.button14.TabIndex = 5;
-            this.button14.Text = "See Sudents Behaviour";
+            this.button14.Text = "View Sudents Behaviour";
             this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button14.UseVisualStyleBackColor = true;
             // 
@@ -148,7 +264,7 @@ namespace Students_Monitoring_System
             this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button4.Size = new System.Drawing.Size(212, 30);
             this.button4.TabIndex = 4;
-            this.button4.Text = "See Sudents Record";
+            this.button4.Text = "View Sudents Record";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
             // 
@@ -191,7 +307,7 @@ namespace Students_Monitoring_System
             this.studentsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.studentsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.studentsBtn.Location = new System.Drawing.Point(0, 525);
+            this.studentsBtn.Location = new System.Drawing.Point(0, 460);
             this.studentsBtn.Name = "studentsBtn";
             this.studentsBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.studentsBtn.Size = new System.Drawing.Size(212, 36);
@@ -206,7 +322,7 @@ namespace Students_Monitoring_System
             this.institutionAdvisorSubMenuPanel.Controls.Add(this.button5);
             this.institutionAdvisorSubMenuPanel.Controls.Add(this.button12);
             this.institutionAdvisorSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.institutionAdvisorSubMenuPanel.Location = new System.Drawing.Point(0, 468);
+            this.institutionAdvisorSubMenuPanel.Location = new System.Drawing.Point(0, 403);
             this.institutionAdvisorSubMenuPanel.Name = "institutionAdvisorSubMenuPanel";
             this.institutionAdvisorSubMenuPanel.Size = new System.Drawing.Size(212, 57);
             this.institutionAdvisorSubMenuPanel.TabIndex = 8;
@@ -250,7 +366,7 @@ namespace Students_Monitoring_System
             this.institutionAdvisorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.institutionAdvisorBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.institutionAdvisorBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.institutionAdvisorBtn.Location = new System.Drawing.Point(0, 432);
+            this.institutionAdvisorBtn.Location = new System.Drawing.Point(0, 367);
             this.institutionAdvisorBtn.Name = "institutionAdvisorBtn";
             this.institutionAdvisorBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.institutionAdvisorBtn.Size = new System.Drawing.Size(212, 36);
@@ -262,30 +378,13 @@ namespace Students_Monitoring_System
             // 
             // medicalStaffSubMenuPanel
             // 
-            this.medicalStaffSubMenuPanel.Controls.Add(this.button8);
             this.medicalStaffSubMenuPanel.Controls.Add(this.button9);
             this.medicalStaffSubMenuPanel.Controls.Add(this.button10);
             this.medicalStaffSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.medicalStaffSubMenuPanel.Location = new System.Drawing.Point(0, 338);
+            this.medicalStaffSubMenuPanel.Location = new System.Drawing.Point(0, 308);
             this.medicalStaffSubMenuPanel.Name = "medicalStaffSubMenuPanel";
-            this.medicalStaffSubMenuPanel.Size = new System.Drawing.Size(212, 94);
+            this.medicalStaffSubMenuPanel.Size = new System.Drawing.Size(212, 59);
             this.medicalStaffSubMenuPanel.TabIndex = 6;
-            // 
-            // button8
-            // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.button8.Location = new System.Drawing.Point(0, 60);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(212, 30);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "View Staff Slaries";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
@@ -326,7 +425,7 @@ namespace Students_Monitoring_System
             this.medicalStaffBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.medicalStaffBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medicalStaffBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.medicalStaffBtn.Location = new System.Drawing.Point(0, 302);
+            this.medicalStaffBtn.Location = new System.Drawing.Point(0, 272);
             this.medicalStaffBtn.Name = "medicalStaffBtn";
             this.medicalStaffBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.medicalStaffBtn.Size = new System.Drawing.Size(212, 36);
@@ -341,7 +440,7 @@ namespace Students_Monitoring_System
             this.activitiesInchargeSubMenuPanel.Controls.Add(this.button6);
             this.activitiesInchargeSubMenuPanel.Controls.Add(this.button7);
             this.activitiesInchargeSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.activitiesInchargeSubMenuPanel.Location = new System.Drawing.Point(0, 239);
+            this.activitiesInchargeSubMenuPanel.Location = new System.Drawing.Point(0, 209);
             this.activitiesInchargeSubMenuPanel.Name = "activitiesInchargeSubMenuPanel";
             this.activitiesInchargeSubMenuPanel.Size = new System.Drawing.Size(212, 63);
             this.activitiesInchargeSubMenuPanel.TabIndex = 4;
@@ -361,6 +460,7 @@ namespace Students_Monitoring_System
             this.button6.Text = "Upload Activities Incharge";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -374,9 +474,10 @@ namespace Students_Monitoring_System
             this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button7.Size = new System.Drawing.Size(212, 30);
             this.button7.TabIndex = 2;
-            this.button7.Text = "Mange Activities Incharge";
+            this.button7.Text = "Manage Activities Incharge";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // activitiesInachrgeBtn
             // 
@@ -385,7 +486,7 @@ namespace Students_Monitoring_System
             this.activitiesInachrgeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.activitiesInachrgeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.activitiesInachrgeBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.activitiesInachrgeBtn.Location = new System.Drawing.Point(0, 203);
+            this.activitiesInachrgeBtn.Location = new System.Drawing.Point(0, 173);
             this.activitiesInachrgeBtn.Name = "activitiesInachrgeBtn";
             this.activitiesInachrgeBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.activitiesInachrgeBtn.Size = new System.Drawing.Size(212, 36);
@@ -397,63 +498,47 @@ namespace Students_Monitoring_System
             // 
             // teachersSubMenuPanel
             // 
-            this.teachersSubMenuPanel.Controls.Add(this.button3);
-            this.teachersSubMenuPanel.Controls.Add(this.button2);
-            this.teachersSubMenuPanel.Controls.Add(this.button1);
+            this.teachersSubMenuPanel.Controls.Add(this.uploadTeacherBtn);
+            this.teachersSubMenuPanel.Controls.Add(this.manageTeacherBtn);
             this.teachersSubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.teachersSubMenuPanel.Location = new System.Drawing.Point(0, 109);
             this.teachersSubMenuPanel.Name = "teachersSubMenuPanel";
-            this.teachersSubMenuPanel.Size = new System.Drawing.Size(212, 94);
+            this.teachersSubMenuPanel.Size = new System.Drawing.Size(212, 64);
             this.teachersSubMenuPanel.TabIndex = 2;
             // 
-            // button3
+            // uploadTeacherBtn
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.button3.Location = new System.Drawing.Point(0, 60);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(212, 30);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "View Slaries";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
+            this.uploadTeacherBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.uploadTeacherBtn.FlatAppearance.BorderSize = 0;
+            this.uploadTeacherBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uploadTeacherBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uploadTeacherBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.uploadTeacherBtn.Location = new System.Drawing.Point(0, 30);
+            this.uploadTeacherBtn.Name = "uploadTeacherBtn";
+            this.uploadTeacherBtn.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.uploadTeacherBtn.Size = new System.Drawing.Size(212, 30);
+            this.uploadTeacherBtn.TabIndex = 3;
+            this.uploadTeacherBtn.Text = "Upload Teachers";
+            this.uploadTeacherBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uploadTeacherBtn.UseVisualStyleBackColor = true;
+            this.uploadTeacherBtn.Click += new System.EventHandler(this.uploadTeacherBtn_Click);
             // 
-            // button2
+            // manageTeacherBtn
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.button2.Location = new System.Drawing.Point(0, 30);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(212, 30);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Upload Teachers";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(212, 30);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Mange Teachers";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.manageTeacherBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.manageTeacherBtn.FlatAppearance.BorderSize = 0;
+            this.manageTeacherBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manageTeacherBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageTeacherBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.manageTeacherBtn.Location = new System.Drawing.Point(0, 0);
+            this.manageTeacherBtn.Name = "manageTeacherBtn";
+            this.manageTeacherBtn.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.manageTeacherBtn.Size = new System.Drawing.Size(212, 30);
+            this.manageTeacherBtn.TabIndex = 2;
+            this.manageTeacherBtn.Text = "Mange Teachers";
+            this.manageTeacherBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageTeacherBtn.UseVisualStyleBackColor = true;
+            this.manageTeacherBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // teachersBtn
             // 
@@ -493,22 +578,23 @@ namespace Students_Monitoring_System
             this.label2.TabIndex = 0;
             this.label2.Text = "Chairman";
             // 
-            // panel1
+            // titlePanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(229, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(646, 73);
-            this.panel1.TabIndex = 1;
+            this.titlePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(43)))), ((int)(((byte)(86)))));
+            this.titlePanel.Controls.Add(this.label1);
+            this.titlePanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.titlePanel.Location = new System.Drawing.Point(229, 0);
+            this.titlePanel.Name = "titlePanel";
+            this.titlePanel.Size = new System.Drawing.Size(688, 73);
+            this.titlePanel.TabIndex = 1;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.label1.Location = new System.Drawing.Point(79, 19);
+            this.label1.Location = new System.Drawing.Point(130, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(441, 39);
             this.label1.TabIndex = 0;
@@ -519,19 +605,124 @@ namespace Students_Monitoring_System
             this.dashboardPanel.AutoScroll = true;
             this.dashboardPanel.AutoSize = true;
             this.dashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.dashboardPanel.Controls.Add(this.sessionSelectingPanel);
             this.dashboardPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboardPanel.Location = new System.Drawing.Point(229, 73);
             this.dashboardPanel.Name = "dashboardPanel";
-            this.dashboardPanel.Size = new System.Drawing.Size(646, 452);
+            this.dashboardPanel.Size = new System.Drawing.Size(688, 518);
             this.dashboardPanel.TabIndex = 2;
+            // 
+            // sessionSelectingPanel
+            // 
+            this.sessionSelectingPanel.Controls.Add(this.sessionTeacherFileOkayBtn);
+            this.sessionSelectingPanel.Controls.Add(this.sessionTeacherOkayBtn);
+            this.sessionSelectingPanel.Controls.Add(this.sessionSemesterCombobox);
+            this.sessionSelectingPanel.Controls.Add(this.sessionCombobox);
+            this.sessionSelectingPanel.Controls.Add(this.label3);
+            this.sessionSelectingPanel.Controls.Add(this.selectSessionLabel);
+            this.sessionSelectingPanel.Controls.Add(this.selectSessionHeadingLabel);
+            this.sessionSelectingPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sessionSelectingPanel.Location = new System.Drawing.Point(0, 0);
+            this.sessionSelectingPanel.Name = "sessionSelectingPanel";
+            this.sessionSelectingPanel.Size = new System.Drawing.Size(688, 518);
+            this.sessionSelectingPanel.TabIndex = 2;
+            // 
+            // sessionTeacherFileOkayBtn
+            // 
+            this.sessionTeacherFileOkayBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sessionTeacherFileOkayBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sessionTeacherFileOkayBtn.Location = new System.Drawing.Point(280, 358);
+            this.sessionTeacherFileOkayBtn.Name = "sessionTeacherFileOkayBtn";
+            this.sessionTeacherFileOkayBtn.Size = new System.Drawing.Size(75, 34);
+            this.sessionTeacherFileOkayBtn.TabIndex = 9;
+            this.sessionTeacherFileOkayBtn.Text = "Okay";
+            this.sessionTeacherFileOkayBtn.UseVisualStyleBackColor = true;
+            this.sessionTeacherFileOkayBtn.Click += new System.EventHandler(this.sessionTeacherFileOkayBtn_Click);
+            // 
+            // sessionTeacherOkayBtn
+            // 
+            this.sessionTeacherOkayBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sessionTeacherOkayBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sessionTeacherOkayBtn.Location = new System.Drawing.Point(280, 358);
+            this.sessionTeacherOkayBtn.Name = "sessionTeacherOkayBtn";
+            this.sessionTeacherOkayBtn.Size = new System.Drawing.Size(75, 34);
+            this.sessionTeacherOkayBtn.TabIndex = 8;
+            this.sessionTeacherOkayBtn.Text = "Okay";
+            this.sessionTeacherOkayBtn.UseVisualStyleBackColor = true;
+            this.sessionTeacherOkayBtn.Click += new System.EventHandler(this.sessionOkayBtn_Click);
+            // 
+            // sessionSemesterCombobox
+            // 
+            this.sessionSemesterCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sessionSemesterCombobox.AutoCompleteCustomSource.AddRange(new string[] {
+            "Semester 1"});
+            this.sessionSemesterCombobox.BackColor = System.Drawing.Color.Silver;
+            this.sessionSemesterCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sessionSemesterCombobox.FormattingEnabled = true;
+            this.sessionSemesterCombobox.Location = new System.Drawing.Point(363, 262);
+            this.sessionSemesterCombobox.Name = "sessionSemesterCombobox";
+            this.sessionSemesterCombobox.Size = new System.Drawing.Size(195, 33);
+            this.sessionSemesterCombobox.TabIndex = 7;
+            // 
+            // sessionCombobox
+            // 
+            this.sessionCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sessionCombobox.AutoCompleteCustomSource.AddRange(new string[] {
+            "Session 2021",
+            "Session 2022",
+            "Session 2023",
+            "Session 2024"});
+            this.sessionCombobox.BackColor = System.Drawing.Color.Gainsboro;
+            this.sessionCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sessionCombobox.FormattingEnabled = true;
+            this.sessionCombobox.Location = new System.Drawing.Point(363, 202);
+            this.sessionCombobox.Name = "sessionCombobox";
+            this.sessionCombobox.Size = new System.Drawing.Size(195, 33);
+            this.sessionCombobox.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.label3.Location = new System.Drawing.Point(205, 260);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(138, 31);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Semester:";
+            // 
+            // selectSessionLabel
+            // 
+            this.selectSessionLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.selectSessionLabel.AutoSize = true;
+            this.selectSessionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectSessionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.selectSessionLabel.Location = new System.Drawing.Point(224, 199);
+            this.selectSessionLabel.Name = "selectSessionLabel";
+            this.selectSessionLabel.Size = new System.Drawing.Size(119, 31);
+            this.selectSessionLabel.TabIndex = 1;
+            this.selectSessionLabel.Text = "Session:";
+            // 
+            // selectSessionHeadingLabel
+            // 
+            this.selectSessionHeadingLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.selectSessionHeadingLabel.AutoSize = true;
+            this.selectSessionHeadingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectSessionHeadingLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.selectSessionHeadingLabel.Location = new System.Drawing.Point(203, 112);
+            this.selectSessionHeadingLabel.Name = "selectSessionHeadingLabel";
+            this.selectSessionHeadingLabel.Size = new System.Drawing.Size(297, 46);
+            this.selectSessionHeadingLabel.TabIndex = 0;
+            this.selectSessionHeadingLabel.Text = "Select Session:";
             // 
             // ChairmanInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 525);
+            this.ClientSize = new System.Drawing.Size(917, 591);
             this.Controls.Add(this.dashboardPanel);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.titlePanel);
             this.Controls.Add(this.sideMenuPanel);
             this.Name = "ChairmanInterface";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -544,8 +735,11 @@ namespace Students_Monitoring_System
             this.teachersSubMenuPanel.ResumeLayout(false);
             this.logoPanel.ResumeLayout(false);
             this.logoPanel.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.titlePanel.ResumeLayout(false);
+            this.titlePanel.PerformLayout();
+            this.dashboardPanel.ResumeLayout(false);
+            this.sessionSelectingPanel.ResumeLayout(false);
+            this.sessionSelectingPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -557,15 +751,13 @@ namespace Students_Monitoring_System
         private System.Windows.Forms.Panel logoPanel;
         private System.Windows.Forms.Button teachersBtn;
         private System.Windows.Forms.Panel teachersSubMenuPanel;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button manageTeacherBtn;
+        private System.Windows.Forms.Button uploadTeacherBtn;
         private System.Windows.Forms.Panel activitiesInchargeSubMenuPanel;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button activitiesInachrgeBtn;
         private System.Windows.Forms.Panel medicalStaffSubMenuPanel;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button medicalStaffBtn;
@@ -575,14 +767,28 @@ namespace Students_Monitoring_System
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Panel studentsSubMenuPanel;
-        private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel dashboardPanel;
+        private System.Windows.Forms.Panel titlePanel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel dashboardPanel;
+        private System.Windows.Forms.Button notificationsBtn;
+        private System.Windows.Forms.Panel sessionSelectingPanel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label selectSessionLabel;
+        private System.Windows.Forms.Label selectSessionHeadingLabel;
+        private System.Windows.Forms.ComboBox sessionCombobox;
+        private System.Windows.Forms.ComboBox sessionSemesterCombobox;
+        private System.Windows.Forms.Button sessionTeacherOkayBtn;
+        private System.Windows.Forms.Button reportsBtn;
+        private System.Windows.Forms.Button emailsBtn;
+        private System.Windows.Forms.Button messagesBtn;
+        private System.Windows.Forms.Button complainsBtn;
+        private System.Windows.Forms.Button sessionTeacherFileOkayBtn;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

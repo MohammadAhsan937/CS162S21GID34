@@ -1,7 +1,7 @@
 ﻿
 namespace Students_Monitoring_System
 {
-    partial class TeachersForm
+    partial class MembersCommonForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,36 +29,36 @@ namespace Students_Monitoring_System
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addMemberTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.passwordLabel = new System.Windows.Forms.Label();
+            this.passwordTextbox = new System.Windows.Forms.TextBox();
+            this.fatherNameTextbox = new System.Windows.Forms.TextBox();
+            this.fatherNameLabel = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.nameTextbox = new System.Windows.Forms.TextBox();
+            this.teacherIdLabel = new System.Windows.Forms.Label();
+            this.teacherIdTextbox = new System.Windows.Forms.TextBox();
+            this.qualificationLabel = new System.Windows.Forms.Label();
+            this.qualificationTextbox = new System.Windows.Forms.TextBox();
+            this.addressLabel = new System.Windows.Forms.Label();
+            this.addressTextbox = new System.Windows.Forms.TextBox();
+            this.salaryLabel = new System.Windows.Forms.Label();
+            this.sectionsLabel = new System.Windows.Forms.Label();
+            this.sectionsCombobox = new System.Windows.Forms.ComboBox();
+            this.emailLabel = new System.Windows.Forms.Label();
+            this.emailTextbox = new System.Windows.Forms.TextBox();
+            this.dateOfBirthTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.salaryTextbox = new System.Windows.Forms.TextBox();
+            this.subjectsLabel = new System.Windows.Forms.Label();
+            this.subjectsCombobox = new System.Windows.Forms.ComboBox();
+            this.contactNumberTextbox = new System.Windows.Forms.TextBox();
+            this.contactNumberLabel = new System.Windows.Forms.Label();
+            this.dateOfBirthLabel = new System.Windows.Forms.Label();
+            this.dataSaveTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.resetBtn = new System.Windows.Forms.Button();
             this.saveBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.memberDataGridView = new System.Windows.Forms.DataGridView();
             this.srNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fatherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,404 +72,406 @@ namespace Students_Monitoring_System
             this.subjects = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.addMemberTableLayoutPanel.SuspendLayout();
+            this.dataSaveTableLayoutPanel.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memberDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // addMemberTableLayoutPanel
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.46361F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.21024F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.03773F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.28841F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
-            this.tableLayoutPanel1.Controls.Add(this.label10, 2, 10);
-            this.tableLayoutPanel1.Controls.Add(this.textBox8, 3, 10);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 2, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox2, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.textBox9, 1, 10);
-            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.textBox7, 3, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label12, 2, 8);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 3, 8);
-            this.tableLayoutPanel1.Controls.Add(this.textBox6, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 6);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.tableLayoutPanel1.RowCount = 12;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.95652F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.56039F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.8744F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.695652F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.8744F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.97585F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(821, 366);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.addMemberTableLayoutPanel.AutoScroll = true;
+            this.addMemberTableLayoutPanel.ColumnCount = 5;
+            this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.46361F));
+            this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.21024F));
+            this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.03773F));
+            this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.28841F));
+            this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
+            this.addMemberTableLayoutPanel.Controls.Add(this.passwordLabel, 2, 10);
+            this.addMemberTableLayoutPanel.Controls.Add(this.passwordTextbox, 3, 10);
+            this.addMemberTableLayoutPanel.Controls.Add(this.fatherNameTextbox, 3, 0);
+            this.addMemberTableLayoutPanel.Controls.Add(this.fatherNameLabel, 2, 0);
+            this.addMemberTableLayoutPanel.Controls.Add(this.nameLabel, 0, 0);
+            this.addMemberTableLayoutPanel.Controls.Add(this.nameTextbox, 1, 0);
+            this.addMemberTableLayoutPanel.Controls.Add(this.teacherIdLabel, 0, 2);
+            this.addMemberTableLayoutPanel.Controls.Add(this.teacherIdTextbox, 1, 2);
+            this.addMemberTableLayoutPanel.Controls.Add(this.qualificationLabel, 2, 2);
+            this.addMemberTableLayoutPanel.Controls.Add(this.qualificationTextbox, 3, 2);
+            this.addMemberTableLayoutPanel.Controls.Add(this.addressLabel, 2, 4);
+            this.addMemberTableLayoutPanel.Controls.Add(this.addressTextbox, 3, 4);
+            this.addMemberTableLayoutPanel.Controls.Add(this.salaryLabel, 2, 6);
+            this.addMemberTableLayoutPanel.Controls.Add(this.sectionsLabel, 0, 8);
+            this.addMemberTableLayoutPanel.Controls.Add(this.sectionsCombobox, 1, 8);
+            this.addMemberTableLayoutPanel.Controls.Add(this.emailLabel, 0, 10);
+            this.addMemberTableLayoutPanel.Controls.Add(this.emailTextbox, 1, 10);
+            this.addMemberTableLayoutPanel.Controls.Add(this.dateOfBirthTimePicker, 1, 6);
+            this.addMemberTableLayoutPanel.Controls.Add(this.salaryTextbox, 3, 6);
+            this.addMemberTableLayoutPanel.Controls.Add(this.subjectsLabel, 2, 8);
+            this.addMemberTableLayoutPanel.Controls.Add(this.subjectsCombobox, 3, 8);
+            this.addMemberTableLayoutPanel.Controls.Add(this.contactNumberTextbox, 1, 4);
+            this.addMemberTableLayoutPanel.Controls.Add(this.contactNumberLabel, 0, 4);
+            this.addMemberTableLayoutPanel.Controls.Add(this.dateOfBirthLabel, 0, 6);
+            this.addMemberTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.addMemberTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+            this.addMemberTableLayoutPanel.Name = "addMemberTableLayoutPanel";
+            this.addMemberTableLayoutPanel.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.addMemberTableLayoutPanel.RowCount = 12;
+            this.addMemberTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.95652F));
+            this.addMemberTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.56039F));
+            this.addMemberTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.8744F));
+            this.addMemberTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.695652F));
+            this.addMemberTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.8744F));
+            this.addMemberTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.addMemberTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.97585F));
+            this.addMemberTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.addMemberTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.addMemberTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.addMemberTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.addMemberTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.addMemberTableLayoutPanel.Size = new System.Drawing.Size(786, 366);
+            this.addMemberTableLayoutPanel.TabIndex = 0;
             // 
-            // label10
+            // passwordLabel
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.label10.Location = new System.Drawing.Point(426, 313);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 20);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "Password:";
+            this.passwordLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.passwordLabel.AutoSize = true;
+            this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.passwordLabel.Location = new System.Drawing.Point(370, 313);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(82, 20);
+            this.passwordLabel.TabIndex = 20;
+            this.passwordLabel.Text = "Password:";
             // 
-            // textBox8
+            // passwordTextbox
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(514, 310);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(249, 26);
-            this.textBox8.TabIndex = 20;
+            this.passwordTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.passwordTextbox.BackColor = System.Drawing.Color.Gainsboro;
+            this.passwordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextbox.Location = new System.Drawing.Point(458, 310);
+            this.passwordTextbox.Name = "passwordTextbox";
+            this.passwordTextbox.Size = new System.Drawing.Size(222, 26);
+            this.passwordTextbox.TabIndex = 20;
             // 
-            // textBox2
+            // fatherNameTextbox
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(514, 24);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(249, 26);
-            this.textBox2.TabIndex = 3;
+            this.fatherNameTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.fatherNameTextbox.BackColor = System.Drawing.Color.Gainsboro;
+            this.fatherNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fatherNameTextbox.Location = new System.Drawing.Point(458, 24);
+            this.fatherNameTextbox.Name = "fatherNameTextbox";
+            this.fatherNameTextbox.Size = new System.Drawing.Size(222, 26);
+            this.fatherNameTextbox.TabIndex = 3;
             // 
-            // label2
+            // fatherNameLabel
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.label2.Location = new System.Drawing.Point(402, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Father Name:";
+            this.fatherNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.fatherNameLabel.AutoSize = true;
+            this.fatherNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fatherNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.fatherNameLabel.Location = new System.Drawing.Point(392, 20);
+            this.fatherNameLabel.Name = "fatherNameLabel";
+            this.fatherNameLabel.Size = new System.Drawing.Size(60, 35);
+            this.fatherNameLabel.TabIndex = 2;
+            this.fatherNameLabel.Text = "Father Name:";
             // 
-            // label1
+            // nameLabel
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.label1.Location = new System.Drawing.Point(83, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name:";
+            this.nameLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.nameLabel.Location = new System.Drawing.Point(68, 27);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(55, 20);
+            this.nameLabel.TabIndex = 0;
+            this.nameLabel.Text = "Name:";
             // 
-            // textBox1
+            // nameTextbox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(144, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 26);
-            this.textBox1.TabIndex = 1;
+            this.nameTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.nameTextbox.BackColor = System.Drawing.Color.Gainsboro;
+            this.nameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameTextbox.Location = new System.Drawing.Point(129, 24);
+            this.nameTextbox.Name = "nameTextbox";
+            this.nameTextbox.Size = new System.Drawing.Size(214, 26);
+            this.nameTextbox.TabIndex = 1;
             // 
-            // label3
+            // teacherIdLabel
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.label3.Location = new System.Drawing.Point(35, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 20);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Teacher\'s ID:";
+            this.teacherIdLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.teacherIdLabel.AutoSize = true;
+            this.teacherIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacherIdLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.teacherIdLabel.Location = new System.Drawing.Point(20, 89);
+            this.teacherIdLabel.Name = "teacherIdLabel";
+            this.teacherIdLabel.Size = new System.Drawing.Size(103, 20);
+            this.teacherIdLabel.TabIndex = 9;
+            this.teacherIdLabel.Text = "Teacher\'s ID:";
             // 
-            // textBox3
+            // teacherIdTextbox
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(144, 86);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(241, 26);
-            this.textBox3.TabIndex = 5;
+            this.teacherIdTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.teacherIdTextbox.BackColor = System.Drawing.Color.Gainsboro;
+            this.teacherIdTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacherIdTextbox.Location = new System.Drawing.Point(129, 86);
+            this.teacherIdTextbox.Name = "teacherIdTextbox";
+            this.teacherIdTextbox.Size = new System.Drawing.Size(214, 26);
+            this.teacherIdTextbox.TabIndex = 5;
             // 
-            // label4
+            // qualificationLabel
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.label4.Location = new System.Drawing.Point(408, 89);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Qualification:";
+            this.qualificationLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.qualificationLabel.AutoSize = true;
+            this.qualificationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qualificationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.qualificationLabel.Location = new System.Drawing.Point(352, 89);
+            this.qualificationLabel.Name = "qualificationLabel";
+            this.qualificationLabel.Size = new System.Drawing.Size(100, 20);
+            this.qualificationLabel.TabIndex = 6;
+            this.qualificationLabel.Text = "Qualification:";
             // 
-            // textBox4
+            // qualificationTextbox
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(514, 86);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(249, 26);
-            this.textBox4.TabIndex = 7;
+            this.qualificationTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.qualificationTextbox.BackColor = System.Drawing.Color.Gainsboro;
+            this.qualificationTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qualificationTextbox.Location = new System.Drawing.Point(458, 86);
+            this.qualificationTextbox.Name = "qualificationTextbox";
+            this.qualificationTextbox.Size = new System.Drawing.Size(222, 26);
+            this.qualificationTextbox.TabIndex = 7;
             // 
-            // label6
+            // addressLabel
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.label6.Location = new System.Drawing.Point(436, 144);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 20);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Address:";
+            this.addressLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addressLabel.AutoSize = true;
+            this.addressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.addressLabel.Location = new System.Drawing.Point(380, 144);
+            this.addressLabel.Name = "addressLabel";
+            this.addressLabel.Size = new System.Drawing.Size(72, 20);
+            this.addressLabel.TabIndex = 12;
+            this.addressLabel.Text = "Address:";
             // 
-            // textBox5
+            // addressTextbox
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(514, 142);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(249, 25);
-            this.textBox5.TabIndex = 11;
+            this.addressTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.addressTextbox.BackColor = System.Drawing.Color.Gainsboro;
+            this.addressTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressTextbox.Location = new System.Drawing.Point(458, 142);
+            this.addressTextbox.Multiline = true;
+            this.addressTextbox.Name = "addressTextbox";
+            this.addressTextbox.Size = new System.Drawing.Size(222, 25);
+            this.addressTextbox.TabIndex = 11;
             // 
-            // label8
+            // salaryLabel
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.label8.Location = new System.Drawing.Point(451, 201);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 20);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Salary:";
+            this.salaryLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.salaryLabel.AutoSize = true;
+            this.salaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salaryLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.salaryLabel.Location = new System.Drawing.Point(395, 201);
+            this.salaryLabel.Name = "salaryLabel";
+            this.salaryLabel.Size = new System.Drawing.Size(57, 20);
+            this.salaryLabel.TabIndex = 15;
+            this.salaryLabel.Text = "Salary:";
             // 
-            // label9
+            // sectionsLabel
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.label9.Location = new System.Drawing.Point(63, 256);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 20);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Sections:";
+            this.sectionsLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.sectionsLabel.AutoSize = true;
+            this.sectionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sectionsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.sectionsLabel.Location = new System.Drawing.Point(48, 256);
+            this.sectionsLabel.Name = "sectionsLabel";
+            this.sectionsLabel.Size = new System.Drawing.Size(75, 20);
+            this.sectionsLabel.TabIndex = 17;
+            this.sectionsLabel.Text = "Sections:";
             // 
-            // comboBox2
+            // sectionsCombobox
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.sectionsCombobox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.sectionsCombobox.BackColor = System.Drawing.Color.Gainsboro;
+            this.sectionsCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sectionsCombobox.FormattingEnabled = true;
+            this.sectionsCombobox.Items.AddRange(new object[] {
             "Physics",
             "Chemistry",
             "Mathematics"});
-            this.comboBox2.Location = new System.Drawing.Point(144, 252);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(241, 28);
-            this.comboBox2.TabIndex = 18;
+            this.sectionsCombobox.Location = new System.Drawing.Point(129, 252);
+            this.sectionsCombobox.Name = "sectionsCombobox";
+            this.sectionsCombobox.Size = new System.Drawing.Size(214, 28);
+            this.sectionsCombobox.TabIndex = 18;
             // 
-            // label11
+            // emailLabel
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.label11.Location = new System.Drawing.Point(86, 313);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(52, 20);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Email:";
+            this.emailLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.emailLabel.AutoSize = true;
+            this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.emailLabel.Location = new System.Drawing.Point(71, 313);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(52, 20);
+            this.emailLabel.TabIndex = 21;
+            this.emailLabel.Text = "Email:";
             // 
-            // textBox9
+            // emailTextbox
             // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox9.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(144, 310);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(241, 26);
-            this.textBox9.TabIndex = 22;
+            this.emailTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.emailTextbox.BackColor = System.Drawing.Color.Gainsboro;
+            this.emailTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTextbox.Location = new System.Drawing.Point(129, 310);
+            this.emailTextbox.Name = "emailTextbox";
+            this.emailTextbox.Size = new System.Drawing.Size(214, 26);
+            this.emailTextbox.TabIndex = 22;
             // 
-            // dateTimePicker1
+            // dateOfBirthTimePicker
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Gainsboro;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(144, 199);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(241, 26);
-            this.dateTimePicker1.TabIndex = 23;
+            this.dateOfBirthTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateOfBirthTimePicker.CalendarTitleForeColor = System.Drawing.Color.Gainsboro;
+            this.dateOfBirthTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateOfBirthTimePicker.Location = new System.Drawing.Point(129, 199);
+            this.dateOfBirthTimePicker.Name = "dateOfBirthTimePicker";
+            this.dateOfBirthTimePicker.Size = new System.Drawing.Size(214, 26);
+            this.dateOfBirthTimePicker.TabIndex = 23;
             // 
-            // textBox7
+            // salaryTextbox
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(514, 199);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(249, 26);
-            this.textBox7.TabIndex = 24;
+            this.salaryTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.salaryTextbox.BackColor = System.Drawing.Color.Gainsboro;
+            this.salaryTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salaryTextbox.Location = new System.Drawing.Point(458, 199);
+            this.salaryTextbox.Name = "salaryTextbox";
+            this.salaryTextbox.Size = new System.Drawing.Size(222, 26);
+            this.salaryTextbox.TabIndex = 24;
             // 
-            // label12
+            // subjectsLabel
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.label12.Location = new System.Drawing.Point(433, 256);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 20);
-            this.label12.TabIndex = 25;
-            this.label12.Text = "Subjects:";
+            this.subjectsLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.subjectsLabel.AutoSize = true;
+            this.subjectsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subjectsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.subjectsLabel.Location = new System.Drawing.Point(377, 256);
+            this.subjectsLabel.Name = "subjectsLabel";
+            this.subjectsLabel.Size = new System.Drawing.Size(75, 20);
+            this.subjectsLabel.TabIndex = 25;
+            this.subjectsLabel.Text = "Subjects:";
             // 
-            // comboBox1
+            // subjectsCombobox
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.subjectsCombobox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.subjectsCombobox.BackColor = System.Drawing.Color.Gainsboro;
+            this.subjectsCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subjectsCombobox.FormattingEnabled = true;
+            this.subjectsCombobox.Items.AddRange(new object[] {
             "Physics",
             "Chemistry",
             "Mathematics"});
-            this.comboBox1.Location = new System.Drawing.Point(514, 252);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(249, 28);
-            this.comboBox1.TabIndex = 26;
+            this.subjectsCombobox.Location = new System.Drawing.Point(458, 252);
+            this.subjectsCombobox.Name = "subjectsCombobox";
+            this.subjectsCombobox.Size = new System.Drawing.Size(222, 28);
+            this.subjectsCombobox.TabIndex = 26;
             // 
-            // textBox6
+            // contactNumberTextbox
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(144, 141);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(241, 26);
-            this.textBox6.TabIndex = 13;
+            this.contactNumberTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.contactNumberTextbox.BackColor = System.Drawing.Color.Gainsboro;
+            this.contactNumberTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactNumberTextbox.Location = new System.Drawing.Point(129, 141);
+            this.contactNumberTextbox.Name = "contactNumberTextbox";
+            this.contactNumberTextbox.Size = new System.Drawing.Size(214, 26);
+            this.contactNumberTextbox.TabIndex = 13;
             // 
-            // label7
+            // contactNumberLabel
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.label7.Location = new System.Drawing.Point(9, 144);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(129, 20);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Contact Number:";
+            this.contactNumberLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.contactNumberLabel.AutoSize = true;
+            this.contactNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactNumberLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.contactNumberLabel.Location = new System.Drawing.Point(54, 136);
+            this.contactNumberLabel.Name = "contactNumberLabel";
+            this.contactNumberLabel.Size = new System.Drawing.Size(69, 37);
+            this.contactNumberLabel.TabIndex = 14;
+            this.contactNumberLabel.Text = "Contact Number:";
             // 
-            // label5
+            // dateOfBirthLabel
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.label5.Location = new System.Drawing.Point(35, 201);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 20);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Date of Birth:";
+            this.dateOfBirthLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.dateOfBirthLabel.AutoSize = true;
+            this.dateOfBirthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateOfBirthLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.dateOfBirthLabel.Location = new System.Drawing.Point(20, 201);
+            this.dateOfBirthLabel.Name = "dateOfBirthLabel";
+            this.dateOfBirthLabel.Size = new System.Drawing.Size(103, 20);
+            this.dateOfBirthLabel.TabIndex = 10;
+            this.dateOfBirthLabel.Text = "Date of Birth:";
             // 
-            // tableLayoutPanel2
+            // dataSaveTableLayoutPanel
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.button1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.saveBtn, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 366);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(821, 42);
-            this.tableLayoutPanel2.TabIndex = 1;
+            this.dataSaveTableLayoutPanel.ColumnCount = 2;
+            this.dataSaveTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.dataSaveTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.dataSaveTableLayoutPanel.Controls.Add(this.resetBtn, 1, 0);
+            this.dataSaveTableLayoutPanel.Controls.Add(this.saveBtn, 0, 0);
+            this.dataSaveTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataSaveTableLayoutPanel.Location = new System.Drawing.Point(0, 366);
+            this.dataSaveTableLayoutPanel.Name = "dataSaveTableLayoutPanel";
+            this.dataSaveTableLayoutPanel.RowCount = 1;
+            this.dataSaveTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.dataSaveTableLayoutPanel.Size = new System.Drawing.Size(786, 42);
+            this.dataSaveTableLayoutPanel.TabIndex = 1;
             // 
-            // button1
+            // resetBtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.resetBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(450, 3);
-            this.button1.Margin = new System.Windows.Forms.Padding(40, 3, 3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 36);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Reset";
-            this.button1.UseVisualStyleBackColor = true;
+            this.resetBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetBtn.Location = new System.Drawing.Point(433, 3);
+            this.resetBtn.Margin = new System.Windows.Forms.Padding(40, 3, 3, 3);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(92, 36);
+            this.resetBtn.TabIndex = 1;
+            this.resetBtn.Text = "Reset";
+            this.resetBtn.UseVisualStyleBackColor = true;
             // 
             // saveBtn
             // 
             this.saveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.saveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveBtn.Location = new System.Drawing.Point(276, 3);
+            this.saveBtn.Location = new System.Drawing.Point(259, 3);
             this.saveBtn.Margin = new System.Windows.Forms.Padding(3, 3, 40, 3);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(94, 36);
             this.saveBtn.TabIndex = 0;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.dataGridView1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.memberDataGridView, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 408);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(821, 118);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(786, 95);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
-            // dataGridView1
+            // memberDataGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.memberDataGridView.AllowUserToAddRows = false;
+            this.memberDataGridView.AllowUserToDeleteRows = false;
+            this.memberDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.memberDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.memberDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.memberDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.memberDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.srNo,
             this.name,
             this.fatherName,
@@ -483,12 +485,12 @@ namespace Students_Monitoring_System
             this.subjects,
             this.email,
             this.password});
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(815, 112);
-            this.dataGridView1.TabIndex = 3;
+            this.memberDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
+            this.memberDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.memberDataGridView.Name = "memberDataGridView";
+            this.memberDataGridView.ReadOnly = true;
+            this.memberDataGridView.Size = new System.Drawing.Size(780, 89);
+            this.memberDataGridView.TabIndex = 3;
             // 
             // srNo
             // 
@@ -581,60 +583,60 @@ namespace Students_Monitoring_System
             this.password.ReadOnly = true;
             this.password.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // TeachersForm
+            // MembersCommonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(821, 526);
+            this.ClientSize = new System.Drawing.Size(786, 503);
             this.Controls.Add(this.tableLayoutPanel3);
-            this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "TeachersForm";
+            this.Controls.Add(this.dataSaveTableLayoutPanel);
+            this.Controls.Add(this.addMemberTableLayoutPanel);
+            this.Name = "MembersCommonForm";
             this.Text = "TeachersForm";
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
+            this.addMemberTableLayoutPanel.ResumeLayout(false);
+            this.addMemberTableLayoutPanel.PerformLayout();
+            this.dataSaveTableLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memberDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel addMemberTableLayoutPanel;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.TextBox nameTextbox;
+        private System.Windows.Forms.Label fatherNameLabel;
+        private System.Windows.Forms.TextBox fatherNameTextbox;
+        private System.Windows.Forms.Label teacherIdLabel;
+        private System.Windows.Forms.TextBox teacherIdTextbox;
+        private System.Windows.Forms.Label qualificationLabel;
+        private System.Windows.Forms.TextBox qualificationTextbox;
+        private System.Windows.Forms.Label dateOfBirthLabel;
+        private System.Windows.Forms.TextBox addressTextbox;
+        private System.Windows.Forms.TextBox contactNumberTextbox;
+        private System.Windows.Forms.Label addressLabel;
+        private System.Windows.Forms.Label contactNumberLabel;
+        private System.Windows.Forms.Label salaryLabel;
+        private System.Windows.Forms.Label sectionsLabel;
+        private System.Windows.Forms.ComboBox sectionsCombobox;
+        private System.Windows.Forms.TextBox passwordTextbox;
+        private System.Windows.Forms.Label emailLabel;
+        private System.Windows.Forms.TextBox emailTextbox;
+        private System.Windows.Forms.DateTimePicker dateOfBirthTimePicker;
+        private System.Windows.Forms.TextBox salaryTextbox;
+        private System.Windows.Forms.Label subjectsLabel;
+        private System.Windows.Forms.ComboBox subjectsCombobox;
+        private System.Windows.Forms.Label passwordLabel;
+        private System.Windows.Forms.TableLayoutPanel dataSaveTableLayoutPanel;
         private System.Windows.Forms.Button saveBtn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button resetBtn;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView memberDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn srNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn fatherName;
@@ -648,5 +650,9 @@ namespace Students_Monitoring_System
         private System.Windows.Forms.DataGridViewTextBoxColumn subjects;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn password;
+
+        // InchargeActivitiesForm GUI Variable
+        private System.Windows.Forms.Button save1Btn;
+        private System.Windows.Forms.Button reset1Btn;
     }
 }
