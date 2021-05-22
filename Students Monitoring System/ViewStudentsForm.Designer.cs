@@ -72,7 +72,7 @@ namespace Students_Monitoring_System
             this.dataGridView1.Location = new System.Drawing.Point(0, -1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(785, 472);
+            this.dataGridView1.Size = new System.Drawing.Size(1145, 472);
             this.dataGridView1.TabIndex = 0;
             // 
             // srNo
@@ -159,7 +159,7 @@ namespace Students_Monitoring_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(781, 472);
+            this.ClientSize = new System.Drawing.Size(1141, 472);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ViewStudentsForm";
             this.Text = "ViewStudentsForm";
