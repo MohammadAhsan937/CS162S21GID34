@@ -141,5 +141,11 @@ namespace Students_Monitoring_System
             UploadMembersFileForm f = new UploadMembersFileForm("Change Button");
             openChildForm(f);
         }
+
+        private void manageMedicalStaffBtn_Click(object sender, EventArgs e)
+        {
+            MembersCommonForm f = new MembersCommonForm("Change form", 7);
+            openChildForm(f);
+        }
     }
 }
