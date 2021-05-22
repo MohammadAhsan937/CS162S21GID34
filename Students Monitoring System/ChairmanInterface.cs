@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Students_Monitoring_System
 {
     public partial class ChairmanInterface : Form
     {
-        int mov, movX, movY;
         private Form activeForm = null;
         public ChairmanInterface()
         {
@@ -24,25 +24,10 @@ namespace Students_Monitoring_System
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
-        private void mouseMoveEvent(object sender, MouseEventArgs e)
-        {
-            if (mov == 1)
-            {
-                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
-            }
-        }
-
-        private void mouseDownEvent(object sender, MouseEventArgs e)
-        {
-            mov = 1;
-            movX = e.X;
-            movY = e.Y;
-        }
-
-        private void mouseUpEvent(object sender, MouseEventArgs e)
-        {
-            mov = 0;
-        }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr one, int two, int three, int four);
 
         private void hideSubMenu()
         {
@@ -210,7 +195,8 @@ namespace Students_Monitoring_System
 
         private void titlePanel_MouseDown(object sender, MouseEventArgs e)
         {
-            mouseDownEvent(sender, e);
+            ReleaseCapture();
+            SendMessage(Handle, 0x112, 0xf012, 0);
         }
 
         private void btnMaximized_Click(object sender, EventArgs e)
@@ -225,16 +211,6 @@ namespace Students_Monitoring_System
             }
         }
 
-        private void titlePanel_MouseMove(object sender, MouseEventArgs e)
-        {
-            mouseMoveEvent(sender, e);
-        }
-
-        private void titlePanel_MouseUp(object sender, MouseEventArgs e)
-        {
-            mouseUpEvent(sender, e);
-        }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -243,6 +219,18 @@ namespace Students_Monitoring_System
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void logoPanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(Handle, 0x112, 0xf012, 0);
+        }
+
+        private void dashboardPanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(Handle, 0x112, 0xf012, 0);
         }
     }
 }

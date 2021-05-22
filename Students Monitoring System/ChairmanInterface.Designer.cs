@@ -97,6 +97,7 @@ namespace Students_Monitoring_System
             this.logoPanel.Name = "logoPanel";
             this.logoPanel.Size = new System.Drawing.Size(276, 103);
             this.logoPanel.TabIndex = 0;
+            this.logoPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.logoPanel_MouseDown);
             // 
             // label2
             // 
@@ -753,6 +754,7 @@ namespace Students_Monitoring_System
             this.dashboardPanel.Name = "dashboardPanel";
             this.dashboardPanel.Size = new System.Drawing.Size(625, 489);
             this.dashboardPanel.TabIndex = 2;
+            this.dashboardPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dashboardPanel_MouseDown);
             // 
             // label1
             // 
@@ -779,8 +781,6 @@ namespace Students_Monitoring_System
             this.titlePanel.Size = new System.Drawing.Size(625, 103);
             this.titlePanel.TabIndex = 1;
             this.titlePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titlePanel_MouseDown);
-            this.titlePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.titlePanel_MouseMove);
-            this.titlePanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.titlePanel_MouseUp);
             // 
             // btnMinimize
             // 
