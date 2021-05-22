@@ -17,3 +17,4 @@ D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students_
 D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students_Monitoring_System.StudentProfileForm.resources
 D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students_Monitoring_System.CommonForm.resources
 D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students Monitoring System.csprojAssemblyReference.cache
+D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students_Monitoring_System.Form2.resources
