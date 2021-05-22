@@ -29,14 +29,25 @@ namespace Students_Monitoring_System
         /// </summary>
         private void InitializeComponent()
         {
+            this.closePanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
+            // 
+            // closePanel
+            // 
+            this.closePanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.closePanel.Location = new System.Drawing.Point(0, 0);
+            this.closePanel.Name = "closePanel";
+            this.closePanel.Size = new System.Drawing.Size(814, 40);
+            this.closePanel.TabIndex = 0;
             // 
             // CommonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(21)))));
+            this.ClientSize = new System.Drawing.Size(814, 442);
+            this.Controls.Add(this.closePanel);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.Name = "CommonForm";
             this.Text = "CommonForm";
             this.ResumeLayout(false);
@@ -44,5 +55,7 @@ namespace Students_Monitoring_System
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel closePanel;
     }
 }

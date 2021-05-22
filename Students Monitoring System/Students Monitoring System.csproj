@@ -57,6 +57,12 @@
     <Compile Include="ChairmanInterface.Designer.cs">
       <DependentUpon>ChairmanInterface.cs</DependentUpon>
     </Compile>
+    <Compile Include="CommonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonForm.Designer.cs">
+      <DependentUpon>CommonForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </Compile>
     <EmbeddedResource Include="ChairmanInterface.resx">
       <DependentUpon>ChairmanInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonForm.resx">
+      <DependentUpon>CommonForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

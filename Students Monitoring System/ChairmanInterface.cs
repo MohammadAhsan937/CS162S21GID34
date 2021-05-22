@@ -12,12 +12,36 @@ namespace Students_Monitoring_System
 {
     public partial class ChairmanInterface : Form
     {
+        int mov, movX, movY;
         private Form activeForm = null;
         public ChairmanInterface()
         {
             InitializeComponent();
             hideSubMenu();
             sessionSelectingPanel.Visible = false;
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+        }
+
+        private void mouseMoveEvent(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void mouseDownEvent(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX = e.X;
+            movY = e.Y;
+        }
+
+        private void mouseUpEvent(object sender, MouseEventArgs e)
+        {
+            mov = 0;
         }
 
         private void hideSubMenu()
@@ -175,6 +199,50 @@ namespace Students_Monitoring_System
         private void studentProfileBtn_Click(object sender, EventArgs e)
         {
             openChildForm(new StudentProfileForm());
+        }
+
+        private void studentsRecordBtn_Click(object sender, EventArgs e)
+        {
+            /*this.Visible = false;
+            CommonForm f = new CommonForm();
+            f.Show();*/
+        }
+
+        private void titlePanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDownEvent(sender, e);
+        }
+
+        private void btnMaximized_Click(object sender, EventArgs e)
+        {
+            if(this.WindowState != FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void titlePanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            mouseMoveEvent(sender, e);
+        }
+
+        private void titlePanel_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseUpEvent(sender, e);
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
