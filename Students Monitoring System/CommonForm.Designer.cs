@@ -37,7 +37,7 @@ namespace Students_Monitoring_System
             this.closePanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.closePanel.Location = new System.Drawing.Point(0, 0);
             this.closePanel.Name = "closePanel";
-            this.closePanel.Size = new System.Drawing.Size(814, 40);
+            this.closePanel.Size = new System.Drawing.Size(814, 33);
             this.closePanel.TabIndex = 0;
             // 
             // CommonForm

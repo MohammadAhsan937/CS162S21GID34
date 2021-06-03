@@ -47,7 +47,6 @@ namespace Students_Monitoring_System
             this.messagesBtn = new System.Windows.Forms.Button();
             this.reportsBtn = new System.Windows.Forms.Button();
             this.notificationsBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.studentsSubMenuPanel = new System.Windows.Forms.Panel();
             this.studentsBehaviourBtn = new System.Windows.Forms.Button();
             this.studentsRecordBtn = new System.Windows.Forms.Button();
@@ -255,7 +254,6 @@ namespace Students_Monitoring_System
             this.sideMenuPanel.Controls.Add(this.messagesBtn);
             this.sideMenuPanel.Controls.Add(this.reportsBtn);
             this.sideMenuPanel.Controls.Add(this.notificationsBtn);
-            this.sideMenuPanel.Controls.Add(this.button1);
             this.sideMenuPanel.Controls.Add(this.studentsSubMenuPanel);
             this.sideMenuPanel.Controls.Add(this.studentsBtn);
             this.sideMenuPanel.Controls.Add(this.institutionAdvisorSubMenuPanel);
@@ -281,7 +279,7 @@ namespace Students_Monitoring_System
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(0, 1142);
+            this.button2.Location = new System.Drawing.Point(0, 1082);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
             this.button2.Size = new System.Drawing.Size(276, 60);
@@ -299,7 +297,7 @@ namespace Students_Monitoring_System
             this.complainsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.complainsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.complainsBtn.Image = ((System.Drawing.Image)(resources.GetObject("complainsBtn.Image")));
-            this.complainsBtn.Location = new System.Drawing.Point(0, 1082);
+            this.complainsBtn.Location = new System.Drawing.Point(0, 1022);
             this.complainsBtn.Name = "complainsBtn";
             this.complainsBtn.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
             this.complainsBtn.Size = new System.Drawing.Size(276, 60);
@@ -317,7 +315,7 @@ namespace Students_Monitoring_System
             this.emailsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.emailsBtn.Image = ((System.Drawing.Image)(resources.GetObject("emailsBtn.Image")));
-            this.emailsBtn.Location = new System.Drawing.Point(0, 1022);
+            this.emailsBtn.Location = new System.Drawing.Point(0, 962);
             this.emailsBtn.Name = "emailsBtn";
             this.emailsBtn.Padding = new System.Windows.Forms.Padding(0, 0, 65, 0);
             this.emailsBtn.Size = new System.Drawing.Size(276, 60);
@@ -335,7 +333,7 @@ namespace Students_Monitoring_System
             this.messagesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.messagesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.messagesBtn.Image = ((System.Drawing.Image)(resources.GetObject("messagesBtn.Image")));
-            this.messagesBtn.Location = new System.Drawing.Point(0, 962);
+            this.messagesBtn.Location = new System.Drawing.Point(0, 902);
             this.messagesBtn.Name = "messagesBtn";
             this.messagesBtn.Padding = new System.Windows.Forms.Padding(0, 0, 34, 0);
             this.messagesBtn.Size = new System.Drawing.Size(276, 60);
@@ -353,7 +351,7 @@ namespace Students_Monitoring_System
             this.reportsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reportsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.reportsBtn.Image = ((System.Drawing.Image)(resources.GetObject("reportsBtn.Image")));
-            this.reportsBtn.Location = new System.Drawing.Point(0, 902);
+            this.reportsBtn.Location = new System.Drawing.Point(0, 842);
             this.reportsBtn.Name = "reportsBtn";
             this.reportsBtn.Padding = new System.Windows.Forms.Padding(0, 0, 47, 0);
             this.reportsBtn.Size = new System.Drawing.Size(276, 60);
@@ -371,7 +369,7 @@ namespace Students_Monitoring_System
             this.notificationsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.notificationsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.notificationsBtn.Image = ((System.Drawing.Image)(resources.GetObject("notificationsBtn.Image")));
-            this.notificationsBtn.Location = new System.Drawing.Point(0, 842);
+            this.notificationsBtn.Location = new System.Drawing.Point(0, 782);
             this.notificationsBtn.Name = "notificationsBtn";
             this.notificationsBtn.Padding = new System.Windows.Forms.Padding(0, 0, 34, 0);
             this.notificationsBtn.Size = new System.Drawing.Size(276, 60);
@@ -380,24 +378,6 @@ namespace Students_Monitoring_System
             this.notificationsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.notificationsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.notificationsBtn.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(0, 782);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(276, 60);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Students Fee Structure";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // studentsSubMenuPanel
             // 
@@ -839,6 +819,7 @@ namespace Students_Monitoring_System
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Resize += new System.EventHandler(this.ChairmanInterface_Resize);
             this.logoPanel.ResumeLayout(false);
             this.logoPanel.PerformLayout();
             this.teachersSubMenuPanel.ResumeLayout(false);
@@ -876,7 +857,6 @@ namespace Students_Monitoring_System
         private System.Windows.Forms.Button messagesBtn;
         private System.Windows.Forms.Button reportsBtn;
         private System.Windows.Forms.Button notificationsBtn;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel studentsSubMenuPanel;
         private System.Windows.Forms.Button studentsBehaviourBtn;
         private System.Windows.Forms.Button studentsRecordBtn;
