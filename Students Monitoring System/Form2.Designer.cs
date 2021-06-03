@@ -36,7 +36,7 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.Degree = new System.Windows.Forms.TextBox();
             this.DOB = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.IDtextBox = new System.Windows.Forms.TextBox();
             this.fcontact = new System.Windows.Forms.TextBox();
             this.fathername = new System.Windows.Forms.TextBox();
             this.studentname = new System.Windows.Forms.TextBox();
@@ -65,7 +65,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.4307F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.5693F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 260F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 248F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 249F));
             this.tableLayoutPanel1.Controls.Add(this.textBox12, 3, 5);
             this.tableLayoutPanel1.Controls.Add(this.Email, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.contact, 1, 4);
@@ -73,7 +73,7 @@
             this.tableLayoutPanel1.Controls.Add(this.textBox8, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.Degree, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.DOB, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.IDtextBox, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.fcontact, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.fathername, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.studentname, 1, 0);
@@ -111,7 +111,7 @@
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(728, 289);
+            this.textBox12.Location = new System.Drawing.Point(727, 289);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(239, 20);
             this.textBox12.TabIndex = 24;
@@ -133,7 +133,7 @@
             // 
             // Semester
             // 
-            this.Semester.Location = new System.Drawing.Point(728, 174);
+            this.Semester.Location = new System.Drawing.Point(727, 174);
             this.Semester.Name = "Semester";
             this.Semester.Size = new System.Drawing.Size(239, 20);
             this.Semester.TabIndex = 21;
@@ -147,7 +147,7 @@
             // 
             // Degree
             // 
-            this.Degree.Location = new System.Drawing.Point(728, 117);
+            this.Degree.Location = new System.Drawing.Point(727, 117);
             this.Degree.Name = "Degree";
             this.Degree.Size = new System.Drawing.Size(239, 20);
             this.Degree.TabIndex = 19;
@@ -159,12 +159,12 @@
             this.DOB.Size = new System.Drawing.Size(239, 20);
             this.DOB.TabIndex = 18;
             // 
-            // textBox5
+            // IDtextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(728, 56);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(239, 20);
-            this.textBox5.TabIndex = 17;
+            this.IDtextBox.Location = new System.Drawing.Point(727, 56);
+            this.IDtextBox.Name = "IDtextBox";
+            this.IDtextBox.Size = new System.Drawing.Size(239, 20);
+            this.IDtextBox.TabIndex = 17;
             // 
             // fcontact
             // 
@@ -175,7 +175,7 @@
             // 
             // fathername
             // 
-            this.fathername.Location = new System.Drawing.Point(728, 3);
+            this.fathername.Location = new System.Drawing.Point(727, 3);
             this.fathername.Name = "fathername";
             this.fathername.Size = new System.Drawing.Size(239, 20);
             this.fathername.TabIndex = 15;
@@ -192,7 +192,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(468, 0);
+            this.label3.Location = new System.Drawing.Point(467, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(219, 39);
             this.label3.TabIndex = 2;
@@ -264,7 +264,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(468, 53);
+            this.label11.Location = new System.Drawing.Point(467, 53);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(165, 36);
             this.label11.TabIndex = 10;
@@ -274,7 +274,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(468, 114);
+            this.label4.Location = new System.Drawing.Point(467, 114);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(147, 36);
             this.label4.TabIndex = 3;
@@ -284,7 +284,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(468, 171);
+            this.label12.Location = new System.Drawing.Point(467, 171);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(147, 36);
             this.label12.TabIndex = 11;
@@ -294,7 +294,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(468, 228);
+            this.label8.Location = new System.Drawing.Point(467, 228);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(149, 39);
             this.label8.TabIndex = 7;
@@ -305,7 +305,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(468, 286);
+            this.label5.Location = new System.Drawing.Point(467, 286);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 29);
             this.label5.TabIndex = 12;
@@ -313,7 +313,7 @@
             // 
             // Address
             // 
-            this.Address.Location = new System.Drawing.Point(728, 231);
+            this.Address.Location = new System.Drawing.Point(727, 231);
             this.Address.Name = "Address";
             this.Address.Size = new System.Drawing.Size(239, 20);
             this.Address.TabIndex = 13;
@@ -377,7 +377,7 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox Degree;
         private System.Windows.Forms.TextBox DOB;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox IDtextBox;
         private System.Windows.Forms.TextBox fcontact;
         private System.Windows.Forms.TextBox fathername;
         private System.Windows.Forms.TextBox studentname;

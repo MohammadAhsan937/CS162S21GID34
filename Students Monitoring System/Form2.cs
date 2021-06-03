@@ -53,6 +53,7 @@ namespace Students_Monitoring_System
             ValidateDate(DOB.Text);
             isvalid_homeaddress(Address.Text);
             isvalid_semester(Semester.Text);
+            validateRegistrationNumber(IDtextBox.Text);
 
 
         }
@@ -172,7 +173,30 @@ namespace Students_Monitoring_System
                 return valids;
             }
         }
-
+        static bool validateRegistrationNumber(String regNo) //its validator
+        {
+            bool flag1 = false;
+            int temp = 0;
+            if (temp != 1)
+            {
+                if ((regNo[0] == '2') && (regNo[1] == '0') && (regNo[2] >= '0'
+                                                                              && regNo[2] <= '2') && (regNo[3] >= '0' && regNo[3] <= '9')
+                     && (regNo[4] == '-') && (regNo[5] >= 'A' && regNo[5] <= 'Z')
+                     && (regNo[6] >= 'A' && regNo[6] <= 'Z') && (regNo[7] == '-')
+                     && (regNo[8] >= '0' && regNo[8] <= '9') && (regNo[9] >= '0'
+                                                                                && regNo[9] <= '9') && (regNo[10] >= '0' && regNo[10] <= '9'))
+                {
+                    flag1 = true;
+                }
+                else
+                {
+                    flag1 = false;
+                    temp = 1;
+                }
+                temp = 1;
+            }
+            return flag1;
+        }
         private void TextBox10_TextChanged(object sender, EventArgs e)
         {
 
