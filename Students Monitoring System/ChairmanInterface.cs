@@ -14,6 +14,8 @@ namespace Students_Monitoring_System
     public partial class ChairmanInterface : Form
     {
         private Form activeForm = null;
+        private object random;
+
         public ChairmanInterface()
         {
             InitializeComponent();
@@ -231,6 +233,18 @@ namespace Students_Monitoring_System
         {
             ReleaseCapture();
             SendMessage(Handle, 0x112, 0xf012, 0);
+        }
+
+        private void ChairmanInterface_Resize(object sender, EventArgs e)
+        {
+            if(this.WindowState == FormWindowState.Maximized)
+            {
+                FormBorderStyle = FormBorderStyle.None;
+            }
+            else
+            {
+                FormBorderStyle = FormBorderStyle.Sizable;
+            }
         }
     }
 }
