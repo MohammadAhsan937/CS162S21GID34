@@ -16,7 +16,6 @@ D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students_
 D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students_Monitoring_System.ViewStudentsForm.resources
 D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students_Monitoring_System.StudentProfileForm.resources
 D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students_Monitoring_System.CommonForm.resources
-D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students Monitoring System.csprojAssemblyReference.cache
 D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students_Monitoring_System.Form2.resources
 C:\Users\Balawal\Desktop\Rough Repository\Students Monitoring System\bin\Debug\Students Monitoring System.exe.config
 C:\Users\Balawal\Desktop\Rough Repository\Students Monitoring System\bin\Debug\Students Monitoring System.exe
@@ -37,3 +36,4 @@ C:\Users\Balawal\Desktop\Rough Repository\Students Monitoring System\obj\Debug\S
 C:\Users\Balawal\Desktop\Rough Repository\Students Monitoring System\obj\Debug\Students Monitoring System.csproj.CopyComplete
 C:\Users\Balawal\Desktop\Rough Repository\Students Monitoring System\obj\Debug\Students Monitoring System.exe
 C:\Users\Balawal\Desktop\Rough Repository\Students Monitoring System\obj\Debug\Students Monitoring System.pdb
+D:\C#\Final Project\CS162S21GID34\Students Monitoring System\obj\Debug\Students Monitoring System.csproj.AssemblyReference.cache
