@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Students_Monitoring_System
 {
@@ -202,7 +203,108 @@ namespace Students_Monitoring_System
         // Save and Reset Button Events
         private void saveBtn_Click(object sender, EventArgs e)
         {
+            isvalid_name(nameTextbox.Text);
+            isvalid_name(fatherNameTextbox.Text);
+            isvalid_email(emailTextbox.Text);
+            isvalid_name(qualificationTextbox.Text);
+            isvalid_contact(contactNumberTextbox.Text);
+            isvalid_Salary(salaryTextbox.Text);
+            
+        }
 
+        public bool isvalid_homeaddress(String H)
+        //135-A2-Gulberg3-Lahore
+        {
+            Regex checks = new Regex(@"^ ^\(? ([0 - 9]{ 3 })\)?[-. ]? ([0 - 9-A-Z]{2})[-. ]? ([A - Z-a-z]{9})[-.]? ([A - Z-a-z]{9})$");
+            bool valids = false;
+            valids = checks.IsMatch(H);
+            if (valids == true)
+            {
+                return valids;
+            }
+            else
+            {
+                MessageBox.Show("Contact Number is invalid");
+                return valids;
+            }
+        }
+        public bool isvalid_name(String n)
+        {
+            Regex check = new Regex(@"^[A-Z][a-z-A-z+)$");
+            bool valid = false;
+            valid = check.IsMatch(n);
+            if (valid == true)
+            {
+                return valid;
+            }
+            else
+            {
+                MessageBox.Show("Name is invalid");
+                return valid;
+            }
+        }
+
+        public bool isvalid_email(String email)
+        {
+            Regex checke = new Regex(@"^\w+[\w-\.]+\@\w{5}\.[a-z]{2,3}$");
+            bool valid = false;
+            valid = checke.IsMatch(email);
+            if (valid == true)
+            {
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("E-mail is invalid");
+                return valid;
+            }
+
+        }
+
+        public bool isvalid_contact(String C)
+        {
+            Regex checks = new Regex(@"^ ^\(? ([0 - 9]{ 3 })\)?[-. ]? ([0 - 9]{3})[-. ]? ([0 - 9]{4})$");
+            bool valids = false;
+            valids = checks.IsMatch(C);
+            if (valids == true)
+            {
+                return valids;
+            }
+            else
+            {
+                MessageBox.Show("Contact Number is invalid");
+                return valids;
+            }
+        }
+        public bool isvalid_Salary(String S)
+        {
+            Regex checks = new Regex(@"^ ^\(? ([0 - 9]{ 6 })$");
+            bool valids = false;
+            valids = checks.IsMatch(S);
+            if (valids == true)
+            {
+                return valids;
+            }
+            else
+            {
+                MessageBox.Show("Salary Number is invalid");
+                return valids;
+            }
+        }
+        public bool isvalid_Session(String Ses)
+        {
+            Regex checks = new Regex(@"^ ^\(? ([0 - 9]{ 4 })$");
+            bool valids = false;
+            valids = checks.IsMatch(Ses);
+            if (valids == true)
+            {
+                return valids;
+            }
+            else
+            {
+                MessageBox.Show("Session  is invalid");
+                return valids;
+            }
         }
 
         private void save1Btn_Click(object sender, EventArgs e)
