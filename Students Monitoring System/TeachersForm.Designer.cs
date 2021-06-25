@@ -92,7 +92,7 @@ namespace Students_Monitoring_System
             this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.21024F));
             this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.03773F));
             this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.28841F));
-            this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
             this.addMemberTableLayoutPanel.Controls.Add(this.passwordLabel, 2, 10);
             this.addMemberTableLayoutPanel.Controls.Add(this.passwordTextbox, 3, 10);
             this.addMemberTableLayoutPanel.Controls.Add(this.fatherNameTextbox, 3, 0);
@@ -143,7 +143,7 @@ namespace Students_Monitoring_System
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.passwordLabel.Location = new System.Drawing.Point(382, 313);
+            this.passwordLabel.Location = new System.Drawing.Point(381, 313);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(82, 20);
             this.passwordLabel.TabIndex = 20;
@@ -154,9 +154,9 @@ namespace Students_Monitoring_System
             this.passwordTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.passwordTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.passwordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTextbox.Location = new System.Drawing.Point(470, 310);
+            this.passwordTextbox.Location = new System.Drawing.Point(469, 310);
             this.passwordTextbox.Name = "passwordTextbox";
-            this.passwordTextbox.Size = new System.Drawing.Size(228, 26);
+            this.passwordTextbox.Size = new System.Drawing.Size(227, 26);
             this.passwordTextbox.TabIndex = 20;
             // 
             // fatherNameTextbox
@@ -164,9 +164,9 @@ namespace Students_Monitoring_System
             this.fatherNameTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.fatherNameTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.fatherNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fatherNameTextbox.Location = new System.Drawing.Point(470, 23);
+            this.fatherNameTextbox.Location = new System.Drawing.Point(469, 23);
             this.fatherNameTextbox.Name = "fatherNameTextbox";
-            this.fatherNameTextbox.Size = new System.Drawing.Size(228, 26);
+            this.fatherNameTextbox.Size = new System.Drawing.Size(227, 26);
             this.fatherNameTextbox.TabIndex = 3;
             // 
             // fatherNameLabel
@@ -175,7 +175,7 @@ namespace Students_Monitoring_System
             this.fatherNameLabel.AutoSize = true;
             this.fatherNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fatherNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.fatherNameLabel.Location = new System.Drawing.Point(358, 26);
+            this.fatherNameLabel.Location = new System.Drawing.Point(357, 26);
             this.fatherNameLabel.Name = "fatherNameLabel";
             this.fatherNameLabel.Size = new System.Drawing.Size(106, 20);
             this.fatherNameLabel.TabIndex = 2;
@@ -200,7 +200,7 @@ namespace Students_Monitoring_System
             this.nameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameTextbox.Location = new System.Drawing.Point(132, 23);
             this.nameTextbox.Name = "nameTextbox";
-            this.nameTextbox.Size = new System.Drawing.Size(220, 26);
+            this.nameTextbox.Size = new System.Drawing.Size(219, 26);
             this.nameTextbox.TabIndex = 1;
             // 
             // teacherIdLabel
@@ -222,7 +222,7 @@ namespace Students_Monitoring_System
             this.teacherIdTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.teacherIdTextbox.Location = new System.Drawing.Point(132, 78);
             this.teacherIdTextbox.Name = "teacherIdTextbox";
-            this.teacherIdTextbox.Size = new System.Drawing.Size(220, 26);
+            this.teacherIdTextbox.Size = new System.Drawing.Size(219, 26);
             this.teacherIdTextbox.TabIndex = 5;
             // 
             // qualificationLabel
@@ -231,7 +231,7 @@ namespace Students_Monitoring_System
             this.qualificationLabel.AutoSize = true;
             this.qualificationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qualificationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.qualificationLabel.Location = new System.Drawing.Point(364, 81);
+            this.qualificationLabel.Location = new System.Drawing.Point(363, 81);
             this.qualificationLabel.Name = "qualificationLabel";
             this.qualificationLabel.Size = new System.Drawing.Size(100, 20);
             this.qualificationLabel.TabIndex = 6;
@@ -242,9 +242,9 @@ namespace Students_Monitoring_System
             this.qualificationTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.qualificationTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.qualificationTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qualificationTextbox.Location = new System.Drawing.Point(470, 78);
+            this.qualificationTextbox.Location = new System.Drawing.Point(469, 78);
             this.qualificationTextbox.Name = "qualificationTextbox";
-            this.qualificationTextbox.Size = new System.Drawing.Size(228, 26);
+            this.qualificationTextbox.Size = new System.Drawing.Size(227, 26);
             this.qualificationTextbox.TabIndex = 7;
             // 
             // addressLabel
@@ -253,7 +253,7 @@ namespace Students_Monitoring_System
             this.addressLabel.AutoSize = true;
             this.addressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addressLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.addressLabel.Location = new System.Drawing.Point(392, 146);
+            this.addressLabel.Location = new System.Drawing.Point(391, 146);
             this.addressLabel.Name = "addressLabel";
             this.addressLabel.Size = new System.Drawing.Size(72, 20);
             this.addressLabel.TabIndex = 12;
@@ -264,10 +264,10 @@ namespace Students_Monitoring_System
             this.addressTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.addressTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.addressTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addressTextbox.Location = new System.Drawing.Point(470, 143);
+            this.addressTextbox.Location = new System.Drawing.Point(469, 143);
             this.addressTextbox.Multiline = true;
             this.addressTextbox.Name = "addressTextbox";
-            this.addressTextbox.Size = new System.Drawing.Size(228, 25);
+            this.addressTextbox.Size = new System.Drawing.Size(227, 25);
             this.addressTextbox.TabIndex = 11;
             // 
             // salaryLabel
@@ -276,7 +276,7 @@ namespace Students_Monitoring_System
             this.salaryLabel.AutoSize = true;
             this.salaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salaryLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.salaryLabel.Location = new System.Drawing.Point(407, 199);
+            this.salaryLabel.Location = new System.Drawing.Point(406, 199);
             this.salaryLabel.Name = "salaryLabel";
             this.salaryLabel.Size = new System.Drawing.Size(57, 20);
             this.salaryLabel.TabIndex = 15;
@@ -306,7 +306,7 @@ namespace Students_Monitoring_System
             "Mathematics"});
             this.sectionsCombobox.Location = new System.Drawing.Point(132, 247);
             this.sectionsCombobox.Name = "sectionsCombobox";
-            this.sectionsCombobox.Size = new System.Drawing.Size(220, 28);
+            this.sectionsCombobox.Size = new System.Drawing.Size(219, 28);
             this.sectionsCombobox.TabIndex = 18;
             // 
             // emailLabel
@@ -328,7 +328,7 @@ namespace Students_Monitoring_System
             this.emailTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailTextbox.Location = new System.Drawing.Point(132, 310);
             this.emailTextbox.Name = "emailTextbox";
-            this.emailTextbox.Size = new System.Drawing.Size(220, 26);
+            this.emailTextbox.Size = new System.Drawing.Size(219, 26);
             this.emailTextbox.TabIndex = 22;
             // 
             // dateOfBirthTimePicker
@@ -338,7 +338,7 @@ namespace Students_Monitoring_System
             this.dateOfBirthTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateOfBirthTimePicker.Location = new System.Drawing.Point(132, 197);
             this.dateOfBirthTimePicker.Name = "dateOfBirthTimePicker";
-            this.dateOfBirthTimePicker.Size = new System.Drawing.Size(220, 26);
+            this.dateOfBirthTimePicker.Size = new System.Drawing.Size(219, 26);
             this.dateOfBirthTimePicker.TabIndex = 23;
             // 
             // salaryTextbox
@@ -346,9 +346,9 @@ namespace Students_Monitoring_System
             this.salaryTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.salaryTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.salaryTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salaryTextbox.Location = new System.Drawing.Point(470, 197);
+            this.salaryTextbox.Location = new System.Drawing.Point(469, 197);
             this.salaryTextbox.Name = "salaryTextbox";
-            this.salaryTextbox.Size = new System.Drawing.Size(228, 26);
+            this.salaryTextbox.Size = new System.Drawing.Size(227, 26);
             this.salaryTextbox.TabIndex = 24;
             // 
             // subjectsLabel
@@ -357,7 +357,7 @@ namespace Students_Monitoring_System
             this.subjectsLabel.AutoSize = true;
             this.subjectsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subjectsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.subjectsLabel.Location = new System.Drawing.Point(389, 251);
+            this.subjectsLabel.Location = new System.Drawing.Point(388, 251);
             this.subjectsLabel.Name = "subjectsLabel";
             this.subjectsLabel.Size = new System.Drawing.Size(75, 20);
             this.subjectsLabel.TabIndex = 25;
@@ -373,9 +373,9 @@ namespace Students_Monitoring_System
             "Physics",
             "Chemistry",
             "Mathematics"});
-            this.subjectsCombobox.Location = new System.Drawing.Point(470, 247);
+            this.subjectsCombobox.Location = new System.Drawing.Point(469, 247);
             this.subjectsCombobox.Name = "subjectsCombobox";
-            this.subjectsCombobox.Size = new System.Drawing.Size(228, 28);
+            this.subjectsCombobox.Size = new System.Drawing.Size(227, 28);
             this.subjectsCombobox.TabIndex = 26;
             // 
             // contactNumberTextbox
@@ -385,7 +385,7 @@ namespace Students_Monitoring_System
             this.contactNumberTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactNumberTextbox.Location = new System.Drawing.Point(132, 143);
             this.contactNumberTextbox.Name = "contactNumberTextbox";
-            this.contactNumberTextbox.Size = new System.Drawing.Size(220, 26);
+            this.contactNumberTextbox.Size = new System.Drawing.Size(219, 26);
             this.contactNumberTextbox.TabIndex = 13;
             // 
             // contactNumberLabel
