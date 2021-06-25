@@ -92,7 +92,7 @@ namespace Students_Monitoring_System
             this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.21024F));
             this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.03773F));
             this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.28841F));
-            this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
+            this.addMemberTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
             this.addMemberTableLayoutPanel.Controls.Add(this.passwordLabel, 2, 10);
             this.addMemberTableLayoutPanel.Controls.Add(this.passwordTextbox, 3, 10);
             this.addMemberTableLayoutPanel.Controls.Add(this.fatherNameTextbox, 3, 0);
@@ -156,7 +156,7 @@ namespace Students_Monitoring_System
             this.passwordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTextbox.Location = new System.Drawing.Point(469, 310);
             this.passwordTextbox.Name = "passwordTextbox";
-            this.passwordTextbox.Size = new System.Drawing.Size(227, 26);
+            this.passwordTextbox.Size = new System.Drawing.Size(226, 26);
             this.passwordTextbox.TabIndex = 20;
             // 
             // fatherNameTextbox
@@ -166,7 +166,7 @@ namespace Students_Monitoring_System
             this.fatherNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fatherNameTextbox.Location = new System.Drawing.Point(469, 23);
             this.fatherNameTextbox.Name = "fatherNameTextbox";
-            this.fatherNameTextbox.Size = new System.Drawing.Size(227, 26);
+            this.fatherNameTextbox.Size = new System.Drawing.Size(226, 26);
             this.fatherNameTextbox.TabIndex = 3;
             // 
             // fatherNameLabel
@@ -244,7 +244,7 @@ namespace Students_Monitoring_System
             this.qualificationTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qualificationTextbox.Location = new System.Drawing.Point(469, 78);
             this.qualificationTextbox.Name = "qualificationTextbox";
-            this.qualificationTextbox.Size = new System.Drawing.Size(227, 26);
+            this.qualificationTextbox.Size = new System.Drawing.Size(226, 26);
             this.qualificationTextbox.TabIndex = 7;
             // 
             // addressLabel
@@ -267,7 +267,7 @@ namespace Students_Monitoring_System
             this.addressTextbox.Location = new System.Drawing.Point(469, 143);
             this.addressTextbox.Multiline = true;
             this.addressTextbox.Name = "addressTextbox";
-            this.addressTextbox.Size = new System.Drawing.Size(227, 25);
+            this.addressTextbox.Size = new System.Drawing.Size(226, 25);
             this.addressTextbox.TabIndex = 11;
             // 
             // salaryLabel
@@ -348,7 +348,7 @@ namespace Students_Monitoring_System
             this.salaryTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salaryTextbox.Location = new System.Drawing.Point(469, 197);
             this.salaryTextbox.Name = "salaryTextbox";
-            this.salaryTextbox.Size = new System.Drawing.Size(227, 26);
+            this.salaryTextbox.Size = new System.Drawing.Size(226, 26);
             this.salaryTextbox.TabIndex = 24;
             // 
             // subjectsLabel
@@ -375,7 +375,7 @@ namespace Students_Monitoring_System
             "Mathematics"});
             this.subjectsCombobox.Location = new System.Drawing.Point(469, 247);
             this.subjectsCombobox.Name = "subjectsCombobox";
-            this.subjectsCombobox.Size = new System.Drawing.Size(227, 28);
+            this.subjectsCombobox.Size = new System.Drawing.Size(226, 28);
             this.subjectsCombobox.TabIndex = 26;
             // 
             // contactNumberTextbox
