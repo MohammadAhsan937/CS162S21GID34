@@ -35,7 +35,7 @@ namespace Students_Monitoring_System
         private void customizeFormForIncharge()
         {
             // teachersIdLabel
-            teacherIdLabel.Text = "Inchargs's ID:";
+            teacherIdLabel.Text = "Inchargs' ID:";
             
             // sectionsLabel
             sectionsLabel.Text = "Activities Status";
@@ -46,7 +46,7 @@ namespace Students_Monitoring_System
             "Co-Curricular Activities"});
 
             // subjectsLabel
-            subjectsLabel.Text = "Email:";
+            subjectsLabel.Text = "Email ";
             this.addMemberTableLayoutPanel.Controls.Add(this.emailTextbox, 3, 8);
 
             // subjectsCombobox
